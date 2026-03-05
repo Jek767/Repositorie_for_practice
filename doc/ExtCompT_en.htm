@@ -1,0 +1,2518 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><HTML dir="ltr"><HEAD><META content="text/html;charset=windows-1251" http-equiv="content-type"></META><STYLE>
+TD {
+	FONT-SIZE: 80%
+}
+TH {
+	FONT-SIZE: 80%
+}
+A:link {
+	TEXT-DECORATION: none; COLOR: #cc0000
+}
+A:visited {
+	TEXT-DECORATION: none; COLOR: #cc0000
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+H1 {
+	FONT-SIZE: 18pt; FONT-FAMILY: Arial, Tahoma; FONT-WEIGHT: bold; COLOR: #003366; TEXT-ALIGN: left
+}
+H2 {
+	FONT-SIZE: 14pt; FONT-FAMILY: Arial, Tahoma; FONT-WEIGHT: bold; TEXT-ALIGN: left
+}
+H3 {
+	FONT-SIZE: 12pt; FONT-FAMILY: Arial, Tahoma; FONT-WEIGHT: bold; TEXT-ALIGN: left
+}
+H4 {
+	FONT-SIZE: 11.5pt; FONT-FAMILY: Arial, Tahoma; FONT-WEIGHT: bold; TEXT-ALIGN: left
+}
+H5 {
+	FONT-SIZE: 10.5pt; FONT-FAMILY: Arial, Tahoma; TEXT-ALIGN: left; MARGIN-LEFT: 10pt
+}
+TABLE .Programtext {
+	COLOR: #0000ff; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND-COLOR: #f0f0f0
+}
+BODY {
+	FONT-SIZE: 80%; FONT-FAMILY: Verdana
+}
+.withBorder {
+	BORDER-TOP: #ffd700 1px solid; FONT-FAMILY: Verdana; BORDER-RIGHT: #ffd700 1px solid; TEXT-ALIGN: left
+}
+.withBorder TD {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid
+}
+.withBorder TH {
+	BORDER-BOTTOM: #ffd700 1px solid; BORDER-LEFT: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee
+}
+UL.TOC LI {
+	LIST-STYLE-TYPE: none
+}
+.Programtext {
+	FONT-SIZE: 10pt; FONT-FAMILY: Courier New; COLOR: #000080
+}
+PRE.Query {
+	FONT-SIZE: 10pt; FONT-FAMILY: Courier New; COLOR: #000080
+}
+PRE.xml {
+	FONT-SIZE: 10pt; FONT-FAMILY: Courier New; COLOR: #000080
+}
+PRE.vbcode {
+	FONT-SIZE: 10pt; FONT-FAMILY: Courier New; COLOR: #000080
+}
+PRE.csharp {
+	FONT-SIZE: 10pt; FONT-FAMILY: Courier New; COLOR: #000080
+}
+PRE {
+	FONT-SIZE: 10pt
+}
+.Marker {
+	BACKGROUND-COLOR: #ffff00
+}
+.heading {
+	BORDER-BOTTOM: #ffd700 1px solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffd700 1px solid; BACKGROUND-COLOR: #ffffee
+}
+.tip {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 95%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; PADDING-TOP: 15px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BACKGROUND-COLOR: #eeffee
+}
+.tip TD {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 95%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; PADDING-TOP: 15px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BACKGROUND-COLOR: #eeffee
+}
+.important {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 95%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; PADDING-TOP: 15px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee
+}
+.important TD {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 95%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; PADDING-TOP: 15px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee
+}
+.note {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 95%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; PADDING-TOP: 15px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff
+}
+.note TD {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 95%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; PADDING-TOP: 15px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff
+}
+.k {
+	COLOR: red
+}
+.c {
+	COLOR: green
+}
+.s {
+	COLOR: black
+}
+.n {
+	COLOR: black
+}
+.p {
+	COLOR: brown
+}
+.list {
+	FONT-SIZE: 80%; TEXT-ALIGN: right
+}
+.date {
+	COLOR: green; TEXT-ALIGN: right
+}
+</STYLE><META name="GENERATOR" content="MSHTML 11.00.9600.19081"></META><SCRIPT>
+ function copySource(oButton){
+   if(window.clipboardData){
+     window.clipboardData.setData('Text',oButton.nextSibling.innerText);
+     alert('Text copied to the clipboard');
+   }else{
+     alert('This function is only supported in the Internet Explorer browser');
+   }
+ }
+ </SCRIPT><STYLE>
+ A.cbData {
+	FONT-SIZE: 8pt; TEXT-DECORATION: none; FONT-FAMILY: Courier New; BACKGROUND: #e6e6e6; BORDER-BOTTOM: #969696 1px solid; TEXT-ALIGN: right; MARGIN: 0px; DISPLAY: block
+}
+ </STYLE><STYLE>
+ .Programtext {
+	FONT-FAMILY: Courier New; COLOR: #000080; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 10px; MARGIN-TOP: 0pt; PADDING-RIGHT: 10px; BACKGROUND-COLOR: #f0f0f0
+}
+.Query {
+	MARGIN-TOP: 0pt
+}
+.xml {
+	MARGIN-TOP: 0pt
+}
+.vbcode {
+	MARGIN-TOP: 0pt
+}
+
+ </STYLE></HEAD>
+
+<body>
+
+
+
+<p class="list">1C:Enterprise 8.3 platform<br>
+<span class=date>13/01/2022</span></p>
+
+<h1>Add-in creation technology</h1>
+
+<ul type=disc>
+ <li><a href="#_Input">
+	Overview</a> </li>
+ <li><a href="#_Struct_folder">
+	Structure
+     of &quot;Add-in technology&quot; distribution package directories</a> </li>
+ <li><a href="#_Comp_cpp">
+	Creating
+     add-ins using Native API</a> </li>
+ <ul type=circle>
+  <li><a
+      href="#_cpp_intf_comp">
+	Add-in interface</a> </li>
+  <li><a
+      href="#_cpp_intf_enterprise">
+	1C:Enterprise interface</a> </li>
+  <li><a
+      href="#_tVariant_Enterprise">
+	Correspondence between tVariant and 1C:Enterprise
+      types</a> </li>
+  <li><a
+      href="#_cpp_warning">
+	Specifics of add-in development using Native API</a> </li>
+ </ul>
+ <li><a href="#_com_comp">
+	Creating
+     add-ins using COM</a> </li>
+ <ul type=circle>
+  <li><a href="#_com_init">
+	Initializing
+      and exporting add-ins</a> </li>
+  <li><a
+      href="#_com_extLang">
+	1C:Enterprise language extension</a> </li>
+  <li><a href="#_com_locale">
+	Localization</a> </li>
+  <li><a
+      href="#_COM_VARIANT_Exchange">
+	Using the COM VARIANT type for data exchange</a> </li>
+  <ul type=square>
+   <li><a
+       href="#addin_function">
+	Calling an add-in function </a></li>
+   <li><a
+       href="#returning_values">
+	Returning values from add-ins</a> </li>
+   <li><a
+       href="#_com_call_1C">
+	Calling 1C:Enterprise object methods from add-ins</a> </li>
+  </ul>
+  <li><a
+      href="#_COM_intf_1C">
+	1C:Enterprise COM-interfaces</a> </li>
+  <ul type=square>
+   <li><a
+       href="#saving_addin_object_parameters">
+	Saving add-in object parameters</a> </li>
+   <li><a
+       href="#_com_infomessage">
+	Informational messages on object operation</a> </li>
+   <li><a
+       href="#dialog_messages">
+	Dialog box messages</a> </li>
+   <li><a
+       href="#about_platform">
+	Platform information</a> </li>
+   <li><a
+       href="#_com_externalevent">
+	External events</a> </li>
+   <li><a
+       href="#_com_statusline">
+	Status line operations</a> </li>
+  </ul>
+  <li><a
+      href="#create_windows">
+	Creating windows in 1C:Enterprise 8 environment</a> </li>
+  <li><a
+      href="#ole_automation_access">
+	Access to 1C:Enterprise via OLE Automation</a> </li>
+  <li><a
+      href="#ole_methods_properties">
+	Methods and properties available via OLE Automation</a> </li>
+  <li><a
+      href="#_com_warning">
+	Specifics of add-in development using COM</a> </li>
+ </ul>
+ <li><a
+     href="#_Подготовка_внешних_компонент_к_рабо">
+	Preparing add-ins for web client
+     operations</a> </li>
+ <ul type=circle>
+  <li><a
+      href="#_Внешние_компоненты_для_Internet_Exp">
+	Add-ins for Internet Explorer</a> </li>
+  <ul type=square>
+   <li><a href="#ie_adapter">
+	Creating
+       an adapter for Internet Explorer</a> </li>
+   <li><a href="#ie_package">
+	Creating
+       a distribution package for Internet Explorer</a> </li>
+  </ul>
+  <li><a name=Chrome></a><a
+      href="#ext_comps_google_chrome">
+	Add-ins
+      for Google Chrome and Mozilla Firefox</a> </li>
+  <ul type=square>
+   <li><a
+       href="#chrome_adapter">
+	Creating an adapter for Google Chrome and Mozilla
+       Firefox</a> </li>
+   <li><a
+       href="#chrome_package">
+	Creating a distribution package for Google Chrome
+       and Mozilla Firefox</a> </li>
+  </ul>
+  <li><a name=Safari></a><a
+      href="#ext_comps_safari">
+	Add-ins for Safari</a> </li>
+  <ul type=square>
+   <li><a
+       href="#safari_adapter">
+	Creating an adapter for Safari</a> </li>
+   <li><a
+       href="#safari_package">
+	Creating a distribution package for Safari</a> </li>
+  </ul>
+ </ul>
+ <li><a
+     href="#_Подготовка_внешних_компонент_для_за">
+	Preparing add-ins for import into
+     a configuration</a> </li>
+ <ul type=circle>
+  <li><a href="#MANIFEST">
+	MANIFEST.XML
+      file description</a><br>
+      <a href="#IOS_MANIFEST_EXTENSIONS">
+	IOS_MANIFEST_EXTENSIONS.XML file description</a><br>
+      <a href="#ANDROID_MANIFEST_EXT_">
+	ANDROID_MANIFEST_EXTENSIONS.XML file description</a><br>
+      <a href="#WINDOWS_RT_MANIFEST">
+	WINDOWS_RT_MANIFEST_EXTENSIONS.XML file description</a><br>
+      <a href="#Rule_Name">
+	Add-in naming rules for the mobile 1C:Enterprise
+      platform</a> </li>
+  <li><a href="#Limited_BK">
+	Add-in
+      restrictions</a> </li>
+ </ul>
+ <li><a href="#examples">
+	Description
+     of examples</a> </li>
+ <ul type=circle>
+  <li><a href="#properties">
+	1C:Enterprise
+      add-in examples for personal computers</a> <br>
+      <a href="#mobile_example">
+	Add-in example for the mobile 1C:Enterprise
+      platform</a> </li>
+ </ul>
+</ul>
+
+<h2><a name="_Input"></a>Overview</h2>
+
+<p>The main goal of 1C:Enterprise is solving various issues
+related to automation of company activities. With its powerful tools and
+official features, you can set up the application to meet specific data
+processing needs of a certain company. At the same time, 1C:Enterprise is an
+open system. You can interact with external applications by using tools of data
+import/export in text and XML formats. The system also supports the OLE
+Automation application integration standard and supports access via web services.
+However, some special integration tasks might require closer interaction
+between 1C:Enterprise and other applications. </p>
+
+<p>For this particular reason, we developed the Add-in
+technology. You can use it to create applications that will be dynamically
+attached and will closely interact with 1C:Enterprise extending its features.
+With add-ins, you can perform a wide range of specific tasks including those
+related to using point-of-sale equipment and 1C:Enterprise together. Add-ins
+can be attached to both 1C:Enterprise server and client applications including
+the web client.</p>
+
+<p>The distribution package contains this guide and a set of
+add-in implementation examples using different technologies.</p>
+
+<p>In the guide, you will learn how to create add-ins using
+Native API and COM.</p>
+
+<h2><a name="_Struct_folder"></a>Structure of &quot;Add-in
+technology&quot; distribution package directories</h2>
+
+<p>The <b>include</b> directory contains a set of included
+header files for add-in creation.</p>
+
+<p>The <b>lib</b> directory contains static libraries used
+to build extensions for Mozilla Firefox, Google Chrome, Safari, and Internet
+Explorer.</p>
+
+<p>The <b>example</b> directory contains examples of add-ins
+developed using COM and Native API. In the directory, you can also find examples
+of extensions for browsers and mobile platforms.</p>
+
+<p>The <b>template</b> directory contains a template you can
+use to create add-ins using Native API.</p>
+
+<p>The <strong>templateMobile</strong>
+directory contains a template that will help you to create add-ins for the
+mobile platform using Native API.</p>
+
+<h2><a name="_Comp_cpp"></a>Creating add-ins using Native API</h2>
+
+<p>With Native API technology, you can create add-ins that
+can be attached both in a client application and on 1C:Enterprise server in
+versions for Microsoft Windows, Linux, Microsoft Windows Runtime, Android, and
+iOS.</p>
+
+<p>For Microsoft Windows Runtime, Android, and iOS, the user
+interface is unavailable.</p>
+
+<p>An add-in implements one or several of its objects that
+can be used in 1C:Enterprise. Each add-in object must be inherited from the
+abstract IComponentBase class (ComponentBase.h file is part of the distribution
+package) and implement all of its methods.</p>
+
+<p>The add-in developed under this technology must export
+the following functions from the library:</p>
+
+<p><b>GetClassNames </b></p>
+<p>Syntax: </p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>const WCHAR_T* GetClassNames() </pre>
+
+<p>Return value:</p>
+
+<p>const WCHAR_T* </p>
+
+<p>Description:</p>
+
+<p>Gets a list of add-in object names. </p>
+
+<p><b>GetClassObject </b></p>
+
+<p>Syntax: </p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>long GetClassObject(const WCHAR_T* clsName, IComponentBase** pIntf) </pre>
+
+<p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;clsName&gt; Type: const
+     WCHAR_T*. Name of the object to be created. </li>
+ <li>
+	&lt;pIntf&gt; Type:
+     IComponentBase**. Pointer to the variable to which the address of the
+     newly created object must be written.</li>
+</ul>
+
+<p>Return value: </p>
+
+<ul type=disc>
+ <li>
+	long: a non-zero value indicates
+     successful object creation</li>
+</ul>
+
+<p>Description:</p>
+
+<p>Creates an add-in object instance. Returns 0 if the
+object cannot be created or the object with specified name is not found. </p>
+
+<p><b>DestroyObject </b></p>
+
+<p>Syntax: </p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>long DestroyObject(IComponentBase** pIntf) </pre>
+
+<p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;pIntf&gt; Type:
+     IComponentBase**. Pointer to the add-in object.</li>
+</ul>
+
+<p>Return value: </p>
+
+<ul type=disc>
+ <li>
+	long: successfully completed</li>
+</ul>
+
+<p>Description:</p>
+
+<p>Deletes an instance of an earlier created object. The
+add-in must delete the object and free the memory used by it using internal
+tools. Returns 0 upon successful completion. Otherwise, returns the runtime
+error code. </p>
+
+<p><b>SetPlatformCapabilities</b></p>
+
+<p>Syntax: </p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>AppCapabilities SetPlatformCapabilities(const AppCapabilities capabilities)</pre>
+
+<p>Parameters:</p>
+
+<ul type=disc>
+ <li>
+	&lt;capabilities&gt; Type: the
+     AppCapabilities enumeration. Enumeration values: eAppCapabilitiesInvalid =
+     -1, eAppCapabilities1 = 1, eAppCapabilitiesLast = eAppCapabilities1, </li>
+</ul>
+
+<p>Description:</p>
+
+<p>Sets the version of features supported by the platform.
+The add-in must return the version that it can operate with. If the function is
+not implemented, the add-in cannot display messages and request information
+about the platform.</p>
+
+<p><b>GetAttachType</b></p>
+
+<p>Syntax: </p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>AttachType GetAttachType()</pre>
+
+<p>Parameters:</p>
+
+<ul type=disc>
+ <li>
+	None</li>
+</ul>
+
+<p>Description:</p>
+
+<p>The add-in must return a supported attachment type that
+it can operate with. If the function is not implemented, the add-in will be
+attached depending on the configuration compatibility mode. </p>
+
+<p>Possible values: </p>
+
+<ul type=disc>
+ <li>
+	eCanAttachNotIsolated = 1.
+     Attachment to a platform process. </li>
+ <li>
+	eCanAttachIsolated = 2. Attachment
+     to a separate host process. </li>
+ <li>
+	eCanAttachAny = 3. Any attachment.
+     </li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h3><a name="_cpp_intf_comp"></a>Add-in interface</h3>
+
+<p><b>Init </b></p>
+
+<p>Syntax: </p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>bool Init(void* Interface)</pre>
+
+<p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;Interface&gt; Type: void*.
+     Pointer to 1C:Enterprise interface. </li>
+</ul>
+
+<p>Return value:</p>
+
+<ul type=disc>
+ <li>
+	bool: successfully completed </li>
+</ul>
+
+<p>Description:</p>
+
+<p>Upon import, 1C:Enterprise initializes the add-in object
+by calling the Init method and passing a pointer to IAddInDefBase. The object
+can save this pointer to use it later. The object returns True if the
+initialization is successfully completed and False if an error occurred. </p>
+
+<p><b>setMemManager </b></p>
+
+<p>Syntax: </p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>bool setMemManager(void* memManager) </pre>
+
+<p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;memManager&gt; Type: void*.
+     Pointer to the 1C:Enterprise memory manager interface. </li>
+</ul>
+
+<p>Return value:</p>
+
+<ul type=disc>
+ <li>
+	bool: successfully completed </li>
+</ul>
+
+<p>Description:</p>
+
+<p>Installs a memory manager for an add-in. When you call
+add-in methods and pass return values that cannot be passed entirely over the
+stack, the add-in must provide memory using the AllocMemory function of the
+memory manager. 1C:Enterprise will subsequently free this memory using the
+FreeMemory function.</p>
+
+<p class=important><b>
+IMPORTANT</b>: you cannot allocate memory to
+return values using &quot;new&quot; or &quot;malloc&quot;, as this will lead to
+a memory leak and application instability.</p>
+
+<p><b>GetInfo </b></p>
+
+<p>Syntax:</p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>long GetInfo();</pre>
+
+<p>Parameters: none.</p>
+
+<p>Return value: </p>
+
+<ul type=disc>
+ <li>
+	long: add-in version</li>
+</ul>
+
+<p>Description:</p>
+
+<p>1C:Enterprise calls this method to get add-in
+information. For example, version 3.56 is returned as 3560.</p>
+
+<p><b>Done </b></p>
+
+<p>Syntax:</p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>void Done(); </pre>
+
+<p>Return value: none.</p>
+
+<p>Description:</p>
+
+<p>1C:Enterprise calls this method when operation with an
+add-in object is completed. This method is called regardless of the object
+initialization result (Init method). </p>
+
+<p><b>RegisterExtensionAs </b></p>
+
+<p>Syntax: </p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>bool RegisterExtensionAs(WCHAR_T** wsExtName) </pre>
+
+<p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;wsExtName&gt; Type: WCHAR_T**.
+     1C:Enterprise language extension name.</li>
+</ul>
+
+<p>Return value:</p>
+
+<ul type=disc>
+ <li>
+	bool: successfully completed</li>
+</ul>
+
+<p>Description:</p>
+
+<p>The extension name is assigned to the wsExtName variable.
+The add-in object provides memory for the string using the AllocMemory memory
+manager function. 1C:Enterprise frees this memory by calling FreeMemory.</p>
+
+<p><b>GetNProps </b></p>
+
+<p>Syntax:</p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>long GetNProps() </pre>
+
+<p>Parameters: none.</pre><p>Return value:</p><ul type=disc>
+ <li>
+	long: number of properties</li></ul><p>Description:</p><p>Returns the number of properties of this extension.
+Returns 0 if there are no properties. </p>
+
+<p><b>FindProp </b></p>
+
+<p>Syntax: </p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>long FindProp(const WCHAR_T* wsPropName); </pre>
+
+<p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;wsPropName&gt; Type: const
+     WCHAR_T*. Property name. </li>
+</ul>
+
+<p>Return value:</p><ul type=disc>
+ <li>
+	long: property's sequence number.</li></ul><p>Description:</p><p>Returns the sequence number of the property with the
+pszPropName name. Returns -1 if the property is not found. Properties are
+numbered starting from 0.</p><p><b>GetPropName </b></p>
+
+<p>Syntax: </p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>const WCHAR_T* GetPropName(long lPropNum, long lPropAlias) </pre>
+
+<p>Parameters:</p><ul type=disc>
+ <li>
+	&lt;lPropNum&gt; Type: long.
+     Property's sequence number. </li>
+ <li>
+	&lt;lPropAlias&gt; Type: long.
+     Name language: </li>
+ <ul type=circle>
+  <li>
+	0: name in English  </li>
+  <li>
+	1: local name </li>
+ </ul>
+</ul>
+
+<p>Return value:</p><ul type=disc>
+ <li>
+	const WCHAR_T*</li></ul><p>Description:</p><p>Returns a property name with the lPropNum sequence
+number. Returns NULL if no property with that number is found. The add-in
+object provides memory for the string using the AllocMemory memory manager
+function. 1C:Enterprise frees this memory by calling FreeMemory.</p><p><b>GetPropVal </b></p>
+
+<p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>bool GetPropVal(const long lPropNum, tVariant* pvarPropVal) </pre>
+
+<p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;lPropNum&gt; Type: const long.
+     Property's sequence number. </li>
+ <li>
+	&lt;pvarPropVal&gt; Type:
+     tVariant*. Pointer to the tVariant structure that contains the property
+     value upon return.</li></ul><p>Return value: </p>
+
+<ul type=disc>
+ <li>
+	bool: successfully completed</li></ul><p>Description:</p><p>Assigns the value of the property with the lPropNum
+sequence number to the pvarPropVal variable. If a property with that number is
+not found or cannot be read, the value must be of the VTYPE_EMPTY type. If the
+return value is of the string type, the add-in provides memory for it using the
+AllocMemory function. 1C:Enterprise will free this memory. </p>
+
+<p><b>SetPropVal </b></p>
+
+<p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>bool SetPropVal(const long lPropNum, tVariant* pvarPropVal); </pre>
+
+<p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;lPropNum&gt; Type: const long.
+     Property's sequence number. </li>
+ <li>
+	&lt;pvarPropVal&gt; Type:
+     tVariant*. tVariant structure that contains the new property value. </li>
+</ul>
+
+<p>Return value: </p>
+
+<ul type=disc>
+ <li>
+	bool: successfully completed </li>
+</ul>
+
+<p>Description:</p><p>The pvarPropVal variable contains a property value with
+the lPropNum sequence number. If the property with that number does not exist,
+cannot be saved, or the passed pvarPropVal has an incompatible type, the method
+returns False.</p><p><b>IsPropReadable </b></p>
+
+<p>Syntax: </p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>bool IsPropReadable(const long lPropNum) </pre>
+
+<p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;lPropNum&gt; Type: const long.
+     Property's sequence number. </li>
+</ul>
+
+<p>Return value: </p>
+
+<ul type=disc>
+ <li>
+	bool </li>
+</ul>
+
+<p>Description:</p><p>Returns a Boolean value that indicates whether the
+property with the lPropNum sequence number is available for reading. False
+means that the property cannot be read. True indicates that property reading is
+allowed. If no property with that number is found, the method returns False.</p><p><b>IsPropWritable </b></p>
+
+<p>Syntax: </p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>bool IsPropWritable(const long lPropNum) </pre>
+
+<p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;lPropNum&gt; Type: const long.
+     Property's sequence number.</li></ul><p>Return value: </p>
+
+<ul type=disc>
+ <li>
+	bool </li>
+</ul>
+
+<p>Description:</p><p>Returns a Boolean value that indicates whether the
+property with the lPropNum sequence number is available for writing. False
+means that the property cannot be written. True indicates that property writing
+is allowed. If no property with that number is found, the method returns False.
+</p>
+
+<p>Methods are numbered starting from 0. Method parameters
+are numbered starting from 0.</p><p><b>GetNMethods </b></p>
+
+<p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>long GetNMethods(); </pre>
+
+<p>Parameters: none</p><p>Return value: </p>
+
+<ul type=disc>
+ <li>
+	long: number of methods. </li>
+</ul>
+
+<p>Description:</p><p>Returns the number of methods of this extension. Returns
+0 if there are no methods.</p><p><b>FindMethod </b></p>
+
+<p>Syntax: </p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>long FindMethod(const WCHAR_T* wsMethodName); </pre>
+
+<p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;wsMethodName&gt; Type: const
+     WCHAR_T*. Method name </li>
+</ul>
+
+<p>Return value:</p><ul type=disc>
+ <li>
+	long: method's sequence number</li></ul><p>Description:</p><p>Returns the sequence number of the method with the
+wsMethodName name. Returns -1 if no method with this name is found. </p>
+
+<p><b>GetMethodName </b></p>
+
+<p>Syntax: </p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>const WCHAR_T* GetMethodName(const long lMethodNum, const long lMethodAlias) </pre>
+
+<p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;lMethodNum&gt; Type: const
+     long. Method's sequence number. </li>
+ <li>
+	&lt;lMethodAlias&gt; Type: const
+     long. Method name language: </li>
+ <ul type=circle>
+  <li>
+	0: name in English  </li>
+  <li>
+	1: local name </li>
+ </ul>
+</ul>
+
+<p>Return value:</p><ul type=disc>
+ <li>
+	const WCHAR_T*: method name</li></ul><p>Description:</p><p>Returns the method name with a sequence number. Returns
+NULL if there is no property with that number. The add-in object provides
+memory for the string using the AllocMemory memory manager function.
+1C:Enterprise frees this memory by calling FreeMemory.</p><p><b>GetNParams </b></p>
+
+<p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>long GetNParams(const long lMethodNum) </pre>
+
+<p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;lMethodNum&gt; Type: const
+     long. Method's sequence number. </li>
+</ul>
+
+<p>Return value: </p>
+
+<ul type=disc>
+ <li>
+	long: number of method parameters</li></ul><p>Description:</p><p>Returns the number of parameters of the method with the
+lMethodNum sequence number. Returns 0 if no method with that number is found or
+if it does not have any parameters.</p><p><b>GetParamDefValue </b></p>
+
+<p>Syntax: </p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>bool GetParamDefValue(const long lMethodNum, const long lParamNum, tVariant* pvarParamDefValue) </pre>
+
+<p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;lMethodNum&gt; Type: const
+     long. Method's sequence number. </li>
+ <li>
+	&lt;lParamNum&gt; Type: const
+     long. Parameter's sequence number. </li>
+ <li>
+	&lt;pvarParamDefValue&gt; Type:
+     tVariant*. Pointer to the tVariant structure that contains the default
+     parameter value upon return. </li>
+</ul>
+
+<p>Return value:</p><ul type=disc>
+ <li>
+	bool: True if the operation is
+     successfully completed (the return value is not considered) </li>
+</ul>
+
+<p>Description:</p><p style='margin-bottom:12.0pt'>
+Assigns the default
+value of the parameter with the lParamNum number of the method with the lMethodNum
+sequence number to the pvarParamDefValue variable. Assigns the VTYPE_EMPTY type
+to the pvarParamDefValue variable if there is no method with that number, no
+parameter with the number, or the parameter has no default value. If the
+default value is of the VTYPE_PSTR, VTYPE_PWSTR, or VTYPE_BLOB type, the add-in
+allocates memory using the AllocMemory memory manager function, writes data
+there, and saves this address to the corresponding structure field.
+1C:Enterprise frees this memory by calling FreeMemory.</p><p><b>HasRetVal </b></p>
+
+<p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>bool HasRetVal(const long lMethodNum) </pre>
+
+<p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;lMethodNum&gt; Type: const
+     long. Method's sequence number. </li>
+</ul>
+
+<p>Return value:</p><ul type=disc>
+ <li>
+	bool</li></ul><p>Description:</p><p style='margin-bottom:12.0pt'>
+Returns a Boolean value
+that indicates whether the method with the lMethodNum sequence number has a
+return value. True means that the method has a return value. Otherwise, False
+is returned.</p><p><b>CallAsProc </b></p>
+
+<p>Syntax: </p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>bool CallAsProc(const long lMethodNum, tVariant* paParams, const long lSizeArray) </pre>
+
+<p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;lMethodNum&gt; Type: const
+     long. Method's sequence number. </li>
+ <li>
+	&lt;paParams&gt; Type: tVariant*
+     Pointer to an array of tVariant structures that contains method parameter
+     values. If the method has no parameters, it contains NULL. </li>
+ <li>
+	&lt;lSizeArray&gt; Type: const
+     long. PaParams array size. </li>
+</ul>
+
+<p>Return value: </p>
+
+<ul type=disc>
+ <li>
+	true: the corresponding method was
+     called, no errors occurred. </li>
+ <li>
+	false: the method is not found or
+     a runtime error occurred.</li></ul><p>Description:</p><p>Executes the method with the lMethodNum sequence number.
+If the method returns False, a runtime error occurs and execution of the
+1C:Enterprise module is terminated. 1C:Enterprise provides and frees memory for
+the parameter array.</p><p><b>CallAsFunc </b></p>
+
+<p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>bool CallAsFunc(const long lMethodNum, tVariant* pvarRetValue, tVariant* paParams, const long lSizeArray) </pre>
+
+<p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;lMethodNum&gt; Type: const
+     long. Method's sequence number. </li>
+ <li>
+	&lt;pvarRetValue&gt; Type:
+     tVariant*. Pointer to the tVariant structure that contains the return
+     value. </li>
+ <li>
+	&lt;paParams&gt; Type: tVariant*.
+     Pointer to an array of tVariant structures that contains method parameter
+     values. If the method has no parameters, it contains NULL. </li>
+ <li>
+	&lt;lSizeArray&gt; Type: const long.
+     PaParams array size. </li>
+</ul>
+
+<p>Return value:</p><ul type=disc>
+ <li>
+	true: the corresponding method was
+     called, no errors occurred. </li>
+ <li>
+	false: the method is not found or
+     a runtime error occurred. </li>
+</ul>
+
+<p>Description:</p><p>Executes the method with the lMethodNum sequence number.
+If the method returns False, a runtime error occurs and execution of the
+1C:Enterprise module is terminated. 1C:Enterprise provides memory for the
+parameter array. If the default value is of the string or binary data type, the
+add-in allocates memory using the AllocMemory memory manager function, writes
+data there, and saves this address to the corresponding structure field.
+1C:Enterprise frees this memory by calling FreeMemory.</p><h2><a name="_native_locale"></a>Localization</h2><p><b>SetLocale </b></p>
+
+<p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>void SetLocale(const WCHAR_T* wsLocale)</pre><p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;wsLocale&gt; Type: const
+     WCHAR_T*. Localization string in &lt;language&gt;_&lt;REGION&gt; format.
+     For example, ru_RU for Linux or rus_RUS for Windows. </li>
+</ul>
+
+<p>Return value:</p><ul type=disc>
+ <li>
+	none</li></ul><p>Description:</p><p>(Obsolete. To be used with the platform version 8.3.21 or
+earlier) 1C:Enterprise calls this method to localize the add-in according to
+the applied localization code. The add-in can set up its environment to
+correctly output information.</p><p><b>SetUserInterfaceLanguageCode </b></p>
+
+<p>Syntax:</p>Copy to clipboard<pre class=Programtext>void SetUserInterfaceLanguageCode(const WCHAR_T* wsLanguageCode)</pre><p>
+Parameters: </p>
+
+<ul>
+	<li>&lt;wsLanguageCode&gt; Type: const WCHAR_T*. Language code that consists of two letters. For example:
+&quot;ru&quot; or &quot;en&quot;.</li></ul><p>Description:</p><p>1C:Enterprise passes the two-letter language code used by
+the user interface to the add-in.</p><p>&nbsp;</p>
+
+<h3><a name="_cpp_intf_enterprise"></a>1C:Enterprise interface</h3><p>When the add-in object is initialized, a pointer to
+1C:Enterprise interface is passed to it, which you can use to call the methods
+listed below. Note that these methods are not operable on the application
+server.</p><p><b>AddError</b></p><p>Syntax: </p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>bool AddError(unsigned short wcode, const WCHAR_T* source, const WCHAR_T* descr, long scode)</pre><p>Parameters:</p><ul type=disc>
+ <li>
+	&lt;wcode&gt; Type: unsigned
+     short. Message code. </li>
+ <li>
+	&lt;source&gt; Type: const
+     WCHAR_T*. Error source. </li>
+ <li>
+	&lt;descr&gt; Type: const
+     WCHAR_T*. Error message. </li>
+ <li>
+	&lt;scode&gt; Type: Error code. </li>
+</ul>
+
+<p>Return value:</p><ul type=disc>
+ <li>
+	bool</li></ul><p>Description:</p><p>Adds an informational message when language extension
+methods are running. If the return value is True, the error information has
+been added successfully. If scode has a non-zero value, an exception, which can
+be programmatically caught and processed, is thrown. </p>
+
+<p>Possible message codes and 1C:Enterprise behavior are
+described in detail in the <a href="#_com_infomessage">
+Informational
+messages about the object operation</a> section for COM
+add-ins.</p><p><b>RegisterProfileAs</b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>bool RegisterProfileAs(WCHAR_T* wsProfileName) </pre>
+
+<p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;wsProfileName&gt; Type:
+     WCHAR_T*. Add-in parameter list name. </li>
+</ul>
+
+<p>Return value: </p>
+
+<ul type=disc>
+ <li>
+	bool</li></ul><p>Description:</p><p>Registers a list with add-in parameters with the
+wsProfileName name.</p><p><b>Read</b></p><p>Syntax: </p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>bool Read(WCHAR_T* pszPropName, tVariant* pVal, long* pErrCode, WCHAR_T** errDescriptor)</pre><p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;pszPropName&gt; Type:
+     WCHAR_T*. Parameter name </li>
+ <li>
+	&lt;pVal&gt; Type: tVariant _t*.
+     Pointer to the parameter return value </li>
+ <li>
+	&lt; pErrCode &gt; Type: long*.
+     Pointer to a variable to which an error code (if any) will be assigned. </li>
+ <li>
+	&lt;errDescriptor&gt; Type:
+     WCHAR_T**. Double pointer to a variable to which the error description
+     will be assigned. </li>
+</ul>
+
+<p>Return value:</p><ul type=disc>
+ <li>
+	bool </li>
+</ul>
+
+<p>Description:</p><p>Reads the saved value of the add-in parameter with the
+pszPropName name. If an error occurs when reading and errDescriptor is a
+non-zero value, 1C:Enterprise provides memory and assigns error description.
+The add-in must free memory by calling FreeMemory. For returned data of the
+string type, memory is also provided by 1C:Enterprise, and the address is saved
+to the corresponding field of the tVariant structure. The add-in must free it
+by calling FreeMemory.</p><p><b>Write</b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>bool Write(WCHAR_T* pszPropName, tVariant* pVar) </pre>
+
+<p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;pszPropName&gt; Type:
+     WCHAR_T*.&nbsp; Parameter name </li>
+ <li>
+	&lt;pVar&gt; Type: tVariant _t*.
+     Pointer to the parameter value </li>
+</ul>
+
+<p>Return value: </p>
+
+<ul type=disc>
+ <li>
+	bool</li></ul><p>Description:</p><p>Saves the add-in parameter value with the pszPropName
+name. If the attempt is not successful, False is returned. </p>
+
+<p><b>SetEventBufferDepth </b></p>
+
+<p>Syntax: </p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>bool SetEventBufferDepth( long lDepth) </pre>
+
+<p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;lDepth&gt; Type: long. Event
+     queue length. </li>
+</ul>
+
+<p>Return value: </p>
+
+<ul type=disc>
+ <li>
+	bool. True. The new size is set. </li>
+</ul>
+
+<p>Description:</p><p>Sets the event queue size for this object. If the current
+number of events in the queue is greater than the set length, the latest events
+are removed.</p><p><b>GetEventBufferDepth </b></p>
+
+<p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>long GetEventBufferDepth() </pre>
+
+<p>Parameters: none</p><p>Return value: </p>
+
+<ul type=disc>
+ <li>
+	long: event queue length.</li></ul><p>Description:</p><p>Returns the event queue size for this object.</p><p><b>ExternalEvent </b></p>
+
+<p>Syntax: </p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>bool ExternalEvent(WCHAR_T* wsSource, WCHAR_T* wsMessage, WCHAR_T* wsData) </pre>
+
+<p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;wsSource&gt; Type: WCHAR_T*.
+     String with the event source name. </li>
+ <li>
+	&lt;wsMessage&gt; Type: WCHAR_T*.
+     String with the event name. </li>
+ <li>
+	&lt;wsData&gt; Type: WCHAR_T*.
+     String with event parameters. </li>
+</ul>
+
+<p>Return value:</p><ul type=disc>
+ <li>
+	true: the event is queued </li>
+ <li>
+	false: the queue is full, event
+     processing is unavailable, or an unknown error occurred</li></ul><p>Description:</p><p>Queues an event and records its source, name, and
+parameters. During event processing, this data is passed to the
+ExternEventProcessing procedure. When you call the ExternalEvent method, event
+processing looks as follows: the event is written to the event queue (if the
+queue is full, the event is lost). After that, if there are no system events,
+the first event is taken from the queue (if the queue is not empty) and
+external event processing is triggered. This process is repeated for all add-in
+objects. This way, processing of external events is synchronized with
+processing of system events.</p><p><b>CleanEventBuffer </b></p>
+
+<p>Syntax: </p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>void CleanEventBuffer() </pre>
+
+<p>Description: </p>
+
+<p>Clears the event queue by removing all events in the
+queue. </p>
+
+<p><b>SetStatusLine </b></p>
+
+<p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>bool SetStatusLine(WCHAR_T* wsStatusLine) </pre>
+
+<p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;wsStatusLine&gt; Type:
+     WCHAR_T*. Status line text. </li>
+</ul>
+
+<p>Return value:</p><ul type=disc>
+ <li>
+	true: the text is displayed in the
+     status line </li>
+ <li>
+	false: the function is unavailable
+     or an unknown error occurred</li></ul><p>Description:</p><p>Sets the status line text.</p><p><b>ResetStatusLine </b></p>
+
+<p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>void ResetStatusLine() </pre>
+
+<p>Return value:</p><p>None</p><p>Description:</p><p>Initializes the status line. </p>
+
+<p><b>GetInterface</b></p><p>Syntax<b>:</b></p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>IInterface* GetInterface(Interfaces iface)</pre><p>Parameters:</p><ul type=disc>
+ <li>
+	&lt;iface&gt; Type: Interfaces.
+     Interfaces enumeration value: eIMsgBox, eIPlatformInfo</li></ul><p>Return value:</p><ul type=disc>
+ <li>
+	Iinterface*: a pointer to the
+     required interface.</li></ul><p>Description:</p><p>Requests the platform interface. If the platform supports
+the requested interface, a pointer to the interface is returned. Otherwise, 0
+is returned. </p>
+
+<p><b>Confirm</b></p><p>Syntax<b>:</b></p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>bool Confirm(const WCHAR_T* queryText, tVariant* retVal)</pre><p>Parameters:</p><ul type=disc>
+ <li>
+	&lt;queryText&gt; Type: WCHAR_T*.
+     Question text. </li>
+ <li>
+	&lt;retVal&gt; Type: tVariant*.
+     Dialog box return value. Type: VTYPE_BOOL. True corresponds to the OK
+     button. False corresponds to the Cancel button. </li>
+</ul>
+
+<p>Return value:</p><ul type=disc>
+ <li>
+	bool: True if the dialog box is
+     displayed.</li></ul><p>Description:</p><p>Displays a dialog box with a text specified in the
+queryText parameter and OK and Cancel buttons.</p><p><b>Alert</b></p><p>Syntax<b>:</b></p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>bool Alert(const WCHAR_T* text)</pre><p>Parameters:</p><ul type=disc>
+ <li>
+	&lt;text&gt; Type: WCHAR_T*.
+     Message text. </li>
+</ul>
+
+<p>Return value:</p><ul type=disc>
+ <li>
+	bool: True if the dialog box is
+     displayed.</li></ul><p>Description:</p><p>Displays a simple notification dialog box with a text
+defined by the text parameter and with an OK button.</p><p><b>GetPlatformInfo</b></p><p>Syntax<b>:</b></p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>AppInfo* GetPlatformInfo()</pre><p>Return value:</p><ul type=disc>
+ <li>
+	AppInfo* is a pointer to a
+     structure with the following fields: &quot;AppVersion&quot; of the
+     WCHAR_T* type contains the application version. &quot;Application&quot; of
+     the enumeration type contains the type of the application to which the
+     add-in is attached. &quot;UserAgentInformation&quot; of the WCHAR_T* type
+     contains browser information (for web client only).</li></ul><p>Description:</p><p>Requests information on the platform. When you attach the
+add-in in the web client of the platform version earlier than 8.3.3, only the
+Application field of the AppInfo structure will be filled. </p>
+
+<p><b>GetAttachedInfo</b></p><p>Syntax<b>:</b></p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>AttachedType GetAttachedInfo()</pre><p>Return value:</p><ul type=disc>
+ <li>
+	AttachedType. Type of add-in attachment to the platform: </li><ul type=circle>
+  <li>
+	eAttachedIsolated = 0: isolated attachment </li><li>
+	eAttachedNotIsolated = 1: non-isolated attachment </li></ul></ul><p>Description:</p><p>Requests information on the add-in attachment type. </p>
+
+<p>&nbsp;</p>
+
+<h3><a name="_tVariant_Enterprise"></a>Correspondence between tVariant and
+1C:Enterprise types</h3><p>Correspondence between 1C:Enterprise and COM types:</p><ul type=disc>
+ <li>
+	VTYPE_EMPTY corresponds to an
+     undefined value. When it is passed as a method parameter, the default
+     parameter value is passed instead. </li><li>
+	Values of the VTYPE_I2, VTYPE_I4, VTYPE_ERROR, and VTYPE_UI1 types correspond to an integer value and are
+     located in lVal. </li><li>
+	Values of the VTYPE_BOOL type
+     correspond to a boolean value and are located in bVal. </li><li>
+	Values of the VTYPE_R4, VTYPE_R8,
+     and VTYPE_CY types correspond to a fractional value and are located in dblVal. </li><li>
+	Values of the VTYPE_DATE type
+     correspond to a date value and are located in date. </li><li>
+	Values of the VTYPE_TM type
+     correspond to a date value and are located in struct tm tmVal. </li><li>
+	Values of the VTYPE_PSTR type
+     correspond to the (char*) string value and are located in pstrVal with
+     length specified in strLen. </li><li>
+	Values of the VTYPE_PWSTR type
+     correspond to the (WCHAR_T*) string value and are located in pwstrVal with
+     length specified in wstrLen. </li><li>
+	Values of the VTYPE_BLOB type
+     correspond to binary data and are located in pstrVal with length specified
+     in strLen. </li></ul><p>The VTYPE_INTERFACE and VTYPE_VARIANT types are not
+supported.</p><p class=note><strong>
+Note:</strong><br>Numeric values
+passed as parameters from the web client can be received with any numeric type.</p><p><i>The VTYPE_BLOB type is not supported in the web client.</i></p><h3><a name="_cpp_warning"></a>Specifics of add-in development using
+Native API</h3><p>Any add-in created using this technology is platform-dependent.
+So, the developer must build an add-in version for both x86 and x86-64
+platforms, as well as for ARM64, and Elbrus-8C. Later, the configuration
+developer will determine the platform type and import the required add-in
+variant.</p><p>The add-in must be supported by all operating systems
+from the <a
+href="https://1c-dn.com/library/system_requirements/">list of supported operating systems</a>.
+We recommend that you build add-ins for Linux on the latest supported Linux
+version from the list.</p><p>Also, note that you can import add-ins on the
+1C:Enterprise application server running any OS. For this reason, it is
+recommended that you make your add-in cross-platform.</p><p>1C:Enterprise operates with strings in Unicode format
+(WCHAR_T) with 2 byte characters. The character size matches the built-in wchar_t type for Windows, but may differ for other OS. The wchar_t size in
+other OS may be, for example, 4 bytes. The add-in developer must manually
+convert character data of this type.</p><p>If an add-in uses additional modules, specify it in the
+add-in documentation. Statically add applied non-system run-time libraries to
+the add-in if it is permitted by the run-time library license. You need to do
+it as the libraries might be missing or have inappropriate version on the
+computer where the add-in will be used. Also include a manifest in the Windows
+add-in.</p><p>If exceptions are thrown, they must be caught and
+processed in the add-in. Information about them must be passed to 1C:Enterprise
+by the AddError method.</p><p>If the add-in is used on the 1C:Enterprise application
+server, external events are not processed. Methods related to status line
+operations and saving parameters will not be processed as well.</p><p>The add-in can return any binary data, for example, a
+generated barcode image. For that, data is assigned to the pstrVal field of the tVariant structure, the data size is assigned to strLen, and the type is
+assigned to VTYPE_BLOB. 1C:Enterprise uses the BinaryData type for them.</p><p>The date value is passed to the add-in as the tm
+structure with specified VTYPE_TM type. The add-in can return a date value
+either in struct tm or Windows DATE type with specified VTYPE_DATE type.
+1C:Enterprise will process it correctly.</p><p>Return values of the VTYPE_ARRAY and VTYPE_BYREF types
+are not supported.</p><h3>Web publishing settings for the mobile 1C:Enterprise platform </h3><p>When you configure Web publishing, add MIME types in http
+server settings for the following extensions:</p><ul type=disc>
+ <li>
+	.so </li><li>
+	.apk </li><li>
+	.dylib </li><li>
+	.a </li>
+</ul>
+
+<p>MIME type: application/octet-stream</p><h4><strong>Windows Runtime</strong></h4><p>For development on Windows Runtime, you need Windows 8.1
+or later installed with MS Visual Studio 2017 (Windows Phone SDK kit).</p><p>Add-in development result must be a group of dynamic
+*.dll libraries for mobile phones and tablets of all supported processors.</p><p>You can find add-in project examples in the
+\example\NativeAPIMobile\WinRT_Proj\ directory.</p><p>To debug add-ins, use projects in the mobile.zip\Windows\vcproj.zip distribution package:</p><ul type=disc>
+ <li>
+	store: MS Visual Studio project
+     for mobile applications </li><li>
+	store_client: MS Visual Studio
+     project for mobile clients </li></ul><p>Before using any of them, copy the content of
+1cem-XXXXX.appx distribution package archive to the appx\ directory.</p><p>After adding the source codes of your add-in, you can use
+standard MS Visual Studio tools for debugging.</p><p>Windows Runtime does not support import of dynamic
+libraries from a Web publication.</p><h4><strong>Android</strong></h4><p>On Android, you can write a code in C++  and use Java Native Interface technology.</p><p>Add-in development result for Android must be a group of
+*.so dynamic libraries for all supported processors. For Java code, the result
+must also include an *.apk file. The *.apk file is not a separate application
+and is not designed to run independently. It is further included in the built
+mobile application.</p><p>You can find a project example in the
+\example\NativeAPIMobile\Android_Proj\ directory.</p><p>To debug an add-in, use dynamic libraries imported from a
+Web publication. This import is performed automatically after updating the
+configuration (with nested libraries) on the device with the web publication on
+the developer's computer.</p><h4><strong>iOS</strong></h4><p>In case of iOS application development, you cannot use
+non-system dynamic libraries for publishing in AppStore. For that reason, the
+add-in developer must use them only for development and debugging purposes.</p><p>Add-in development result for iOS must include a file of
+dynamic *.dylib library for testing purposes signed with a developer
+certificate and a binary *.a file for static linking for the application
+builder.</p><p>To debug an add-in, use the project  in the mobile.zip\iOS\prjios.zip distribution
+package.</p><p>After adding the source codes of your add-in, you can use
+standard Xcode tools for debugging.</p><p>To debug an add-in, you can also import dynamic libraries
+from a Web publication. This import is performed automatically after updating
+the configuration (with nested libraries) on the device with the Web
+publication on the developer's computer.</p><p>iOS 10.0 and later versions no longer support using
+dynamic libraries from a web publication. In this case, you can use the binary
+file of static *.a library for testing purposes.</p><h4><strong>Signing with a developer certificate</strong></h4><p>Signing with a developer certificate is performed using
+the codesign utility with the following command:</p><p>codesign -s &lt;certificate name&gt; &lt;library file
+name&gt;</p><p>Example:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A> <pre class=xml>
+codesign -s &quot;iPhone Developer&quot; /Users/Somebody/Documents/addin/iOS_Proj/Build/com_1c_StepCounter.dylib</pre><h4><strong>Static library</strong></h4><p>With the static *.a library, you can build the final
+application by linking an add-in into the platform.</p><p>To avoid name conflicts, the add-in code must be located
+in its own unique namespace. The namespace name must match or include the
+add-in name.</p><p>The add-in is registered statically when the application
+is loaded. You can see the respective code in the example.</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A> <PRE class="xml">#if defined(__APPLE__) &amp;&amp; !defined(BUILD_DYNAMIC_LIBRARY)
+
+namespace COM_1C_STEP_COUNTER
+{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; static LPCVOID addin_exports[] =
+&nbsp;&nbsp;&nbsp; {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "GetClassObject", (LPCVOID)GetClassObject,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "DestroyObject", (LPCVOID)DestroyObject,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "GetClassNames", (LPCVOID)GetClassNames,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "SetPlatformCapabilities", (LPCVOID)SetPlatformCapabilities,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NULL
+&nbsp;&nbsp;&nbsp; };
+&nbsp;&nbsp;&nbsp; DECLARE_DLL((const char*)g_kComponentNames, addin_exports);
+}
+
+#endif //__APPLE__ &amp;&amp; !BUILD_DYNAMIC_LIBRARY</PRE><p>&nbsp;</p>
+
+<p>You can find a project example in the
+\example\NativeAPIMobile\iOS_Proj\ directory.</p><h2><a name="_com_comp"></a>Creating add-ins using COM</h2><p>You can apply add-ins created using COM in earlier
+1C:Enterprise versions (7.7, 8.0, and 8.1).</p><p>However, you cannot create add-ins using this technology
+for Microsoft Windows Runtime, Android, or iOS.</p><p>When you import an add-in by the LoadAddIn or AttachAddIn
+function (&lt;AddInLocation&gt;, &lt;MarkName&gt;, AddInType.COM),
+1C:Enterprise identifies ProgID of the add-in COM object in the following way:</p><ul type=disc>
+ <li>
+	ProgID has the following format:
+     &lt;Vendor&gt;.&lt;Component&gt;. </li>
+ <li>
+	The &quot;AddIn&quot; string is
+     used as the first part (&lt;Vendor&gt;). </li>
+ <li>
+	A string with ID 100 from the
+     add-in string table is used as the second part (&lt;Component&gt;). The
+     string might be &quot;Name1|Name2|...|NameN&quot;. In this case, all
+     objects with ProgID of the &quot;AddIn.NameX&quot; type are created. If
+     such string is not found, the add-in file name is used without an
+     extension.</li></ul><p>When you use the AttachAddIn function
+(&lt;AddInObjectName&gt;), ProgID of the add-in COM object is passed as the
+function parameter. It can also be presented as a string in the ProgID1|
+ProgID2|...|ProgIDX format.</p><h3><a name="_com_init"></a>Initializing and exporting add-ins</h3><p>To initialize and export an add-in, use the IInitDone
+interface. This interface is inherited from IUnknown. Use it to initialize an
+object and complete operations with it.</p><p><b>Init </b></p>
+
+<p>Syntax: </p>
+
+<A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT Init(IDispatch *pBackConnection) </pre>
+
+<p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;pBackConnection&gt; Type:
+     IDispatch. Pointer to 1C:Enterprise interface. </li>
+</ul>
+
+<p>Return value: </p>
+
+<ul type=disc>
+ <li>
+	E_FAIL: an error occurred when
+     initializing. </li>
+ <li>
+	S_OK: initialization succeeded.</li></ul><p>Description:</p><p>Upon import, 1C:Enterprise initializes the add-in object
+by calling the Init method and passing a pointer to IDispatch. The object can
+save this pointer to use it later. To get other 1C:Enterprise interfaces, the
+object calls the QueryInterface method of the received IDispatch interface. If
+the object returns S_OK, the initialization succeeded. If the object returns E_FAIL, an error occurred. The method can use the IerrorLog interface to
+display error details. The initialization is unsuccessful if the scode field in
+one of the passed EXCEPINFO structures is not S_OK. All data passed to IErrorLog is processed when returning from this method. The AppDispatch property is undefined when the method is called. </p><p><b>Done </b></p>
+
+<p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT Done(void) </p><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: the object completed its
+     operation. </li><li>
+	E_FAIL: an error occurred.</li></ul><p>Description:</p><p>1C:Enterprise calls this method when operation with an
+add-in object is completed. The object must return S_OK. This method is called
+regardless of the object initialization result (Init method). </p><p><b>GetInfo </b></p><p>Syntax: </p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT GetInfo(SAFEARRAY** pInfo) </pre><p>Parameters: </p><ul type=disc>
+ <li>
+	&lt;PInfo&gt; Type: SAFEARRAY**.
+     Double pointer to the VARIANT structure array. 1C:Enterprise provides
+     memory for the array.</li></ul><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: add-in information is
+     returned. </li><li>
+	E_FAIL: an error occurred.</li></ul><p>Description:</p><p>1C:Enterprise calls this method to get add-in
+information. For the current add-in technology version 2.0, write the supported
+add-in technology version in the item with index 0. The version value must be
+an integer in V_14 format. Major version number is in thousands place and minor
+version number is in units place. For example, version 3.56 is returned as
+3560. Currently, all add-in objects support version 1.0 (the number is 1000) or
+version 2.0 (the number is 2000). 1C:Enterprise provides memory for pInfo. The
+method must return S_OK. </p><p>The add-in object must implement the interface. If the
+interface is not found, you cannot import the add-in.</p><h3><a name="_com_extLang"></a>1C:Enterprise language extension</h3><p>To extend 1C:Enterprise language, the add-in must
+implement the ILanguageExtender interface. The interface is inherited from IUnknown. It is intended to extend 1C:Enterprise language. To use this
+extension, call the CreateObject function (New in 1C:Enterprise 8) and pass a
+string in the &quot;AddIn.&lt;ExtensionName&gt;&quot; format to the function,
+where &lt;ExtensionName&gt; is the return value of the interface method. After
+that, you can use the created object by calling its methods and properties.</p><p>With version 2.0, you can create multiple objects of the
+same &quot;AddIn.&lt;ExtensionType&gt;&quot; type. However, it is possible only
+if version 2.0 support is explicitly specified for the add-in in the GetInfo method. Otherwise, you can create only one object.</p><p><b>RegisterExtensionAs </b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT RegisterExtensionAs(BSTR *pExtensionName) </pre><p>Parameters: </p><ul type=disc>
+ <li>
+	&lt;pExtensionName&gt; Type: BSTR*. 1C:Enterprise language extension name.</li></ul><p>Return value:</p><ul type=disc>
+ <li>
+	S_OK: successfully completed. </li><li>
+	E_FAIL: an error occurred.</li></ul><p>Description:</p><p>Assigns an extension name to the pExtensionName variable.
+The add-in object uses standard system functions for COM string operations to
+provide memory for the string (for example, SysAllocString). To clear the
+memory, 1C:Enterprise calls SysFreeString.</p><p><b>GetNProps </b></p><p>Syntax: </p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT GetNProps(long* plProps) </pre><p>Parameters: </p><ul type=disc>
+ <li>
+	&lt;plProps&gt; Type: long*.
+     Pointer to the variable that contains the number of extension properties
+     upon return.</li></ul><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: successfully completed. </li><li>
+	E_FAIL: an error occurred.</li></ul><p>Description:</p><p>Returns the number of properties of this extension.
+Returns 0 if there are no properties. 1C:Enterprise provides memory for the plProps variable.</p><p><b>FindProp </b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT FindProp(BSTR pszPropName,long* plPropNum) </pre><p>Parameters: </p><ul type=disc>
+ <li>
+	&lt;pszPropName&gt; Type: BSTR.
+     Property name. </li><li>
+	&lt;plPropNum&gt; Type: long*.
+     Pointer to the variable that contains the property's sequence number upon
+     return. </li></ul><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: successfully completed. </li><li>
+	S_FALSE: no property of the pszPropName name is found in the extension.</li></ul><p>Description:</p><p>Returns the sequence number of the property with the pszPropName name. Returns -1 if the property is not found. Properties are
+numbered starting from 0. 1C:Enterprise provides memory for the plPropNum variable. </p><p><b>GetPropName </b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT GetPropName(long lPropNum,long lAliasNum,BSTR* pPropName) </pre><p>Parameters: </p><ul type=disc>
+ <li>
+	&lt;lPropNum&gt; Type: long.
+     Property's sequence number. </li><li>
+	&lt;lAliasNum&gt; Type: long. Name
+     language: </li><li>
+	0: name in English </li><li>
+	1: local name </li><li>
+	&lt;pPropName&gt; Type: BSTR*.
+     Pointer to the string that contains the property name upon return. </li></ul><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: successfully completed. </li><li>
+	S_FALSE: no property with the lPropNum number is found in this extension. </li></ul><p>Description:</p><p>Assigns the name of the property with the lPropNum sequence number to the pPropName variable. If no property with this number is
+found, an empty string is assigned to pPropName. The add-in object uses
+standard system functions for COM string operations to provide memory for the
+string (for example, SysAllocString). To clear the memory, 1C:Enterprise calls SysFreeString.</p><p><b>GetPropVal</b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT GetPropVal(long lPropNum,VARIANT* pvPropVal) </pre><p>Parameters:</p><ul type=disc>
+ <li>
+	&lt;lPropNum&gt; Type: long.
+     Property's sequence number. </li><li>
+	&lt;pvPropVal&gt; Type: VARIANT*.
+     Pointer to the VARIANT structure that contains the property value upon
+     return. </li></ul><p>Return value:</p><ul type=disc>
+ <li>
+	S_OK: successfully completed. </li><li>
+	S_FALSE: a property with the lPropNum number is not found or unavailable for reading in this extension.</li></ul><p>Description:</p><p>Assigns the value of the property with the lPropNum sequence number to the pvPropVal variable. If a property with that number is
+not found or cannot be read, the variable must be of the VT_EMPTY type. </p><p><b>SetPropVal</b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT SetPropVal(long lPropNum, VARIANT* pvPropVal) </pre><p>Parameters: </p><ul type=disc>
+ <li>
+	&lt;lPropNum&gt; Type: long.
+     Property's sequence number. </li><li>
+	&lt;pvPropVal&gt; Type: VARIANT*.
+     The VARIANT structure that contains a new property value.</li></ul><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: successfully completed. </li><li>
+	S_FALSE: a property with the lPropNum number is not found or unavailable for recording in this
+     extension. </li></ul><p>Description:</p><p>The pvPropVal variable contains the value of the property
+with the lPropNum sequence number. The method returns S_FALSE if the property
+with this number is not found or unavailable for recording or when the type of
+passed pvPropVal cannot be converted to the required one. </p><p><b>IsPropReadable </b></p><p>Syntax: </p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT IsPropReadable(long lPropNum, BOOL* pboolPropReadable) </pre><p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;lPropNum&gt; Type: long.
+     Property's sequence number. </li><li>
+	&lt;pboolPropReadable&gt; Type: BOOL*. Pointer to the variable that indicates whether the property is available
+     for reading upon return.</li></ul><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: successfully completed. </li><li>
+	S_FALSE: no property with the lPropNum number is found in this extension.</li></ul><p>Description:</p><p>Assigns a Boolean value that indicates whether the
+property with the lPropNum sequence number is available for reading to the pboolPropReadable variable. FALSE(0) means that the property cannot be read.
+TRUE(1) indicates that property reading is allowed. If no property with this
+number is found, the method returns S_FALSE. </p><p><b>IsPropWritable </b></p><p>Syntax: </p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT IsPropWritable(long lPropNum, BOOL* pboolPropWritable) </pre><p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;lPropNum&gt; Type: long.
+     Property's sequence number. </li><li>
+	&lt;pboolPropWritable&gt; Type: BOOL*. Pointer to the variable that indicates whether the property is
+     available for recording upon return.</li></ul><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: successfully completed. </li><li>
+	S_FALSE: no property with the lPropNum number is found in this extension.</li></ul><p>Description:</p><p>Assigns a Boolean value that indicates whether the
+property with the lPropNum sequence number is available for recording to the pboolPropReadable variable. FALSE(0) means that the property cannot be
+recorded. TRUE(1) indicates that property recording is allowed. If no property
+with this number is found, the method returns S_FALSE. </p><p>Methods are numbered starting from 0. Method parameters
+are numbered starting from 0.</p><p><b>GetNMethods </b></p><p>Syntax: </p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT GetNMethods(long* plMethods) </pre><p>Parameters: </p><ul type=disc>
+ <li>
+	&lt;plMethods&gt; Type: long*. Pointer to the variable that contains the number of language extension methods upon return.</li></ul><p>Return value:</p><ul type=disc>
+ <li>
+	S_OK: successfully completed. </li><li>
+	E_FAIL: an error occurred.</li></ul><p>Description:</p><p>Assigns the number of extension methods to the plMethods variable. Assigns 0 if there are no methods. </p><p><b>FindMethod </b></p><p>Syntax: </p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT FindMethod(BSTR bstrMethodName, long* plMethNum) </pre><p>Parameters: </p><ul type=disc>
+ <li>
+	&lt;bstrMethodName&gt; Type: BSTR. Method name. </li><li>
+	&lt;plMethNum&gt; Type: long*. Pointer to the variable that contains the sequence number of the methodName method.</li></ul><p>Return value:</p><ul type=disc>
+ <li>
+	S_OK: successfully completed. </li><li>
+	E_FAIL: an error occurred.</li></ul><p>Description:</p><p>Assigns the sequence number of the bstrMethodName method to the plMethNum variable. If the method is not found, -1 is assigned to the variable. </p><p><b>GetMethodName </b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT GetMethodName(long lMethodNum, long lAliasNum, BSTR* pbstrMethName) </pre><p>Parameters: </p><ul type=disc>
+ <li>
+	&lt;lMethodNum&gt; Type: long. Method's sequence number. </li><li>
+	&lt;lAliasNum&gt; Type: long. Method name language: 0 indicates an English name and 1 indicates a local name. </li><li>
+	&lt;pbstrMethName&gt; Type: BSTR*. Pointer to the string that contains the method name upon return. </li></ul><p>Return value:</p><ul type=disc>
+ <li>
+	S_OK: successfully completed. </li><li>
+	S_FALSE: no method with the lMethodNum number is found in the extension.</li></ul><p>Description:</p><p>Assigns a method name with a sequence number to the pbstrMethName variable. Assigns an empty string if no property with this number is found. The add-in object uses standard system functions for COM string operations to provide memory for the string (for example, SysAllocString). To clear the memory, 1C:Enterprise calls SysFreeString. </p><p><b>GetNParams </b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT GetNParams(long lMethodNum, long* plMethParams) </pre><p>Parameters: </p><ul type=disc>
+ <li>
+	&lt;lMethodNum&gt; Type: long.
+     Method's sequence number. </li><li>
+	&lt;plMethParams&gt; Type: long*.
+     Pointer to the variable that contains the number of method parameters upon
+     return.</li></ul><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: successfully completed. </li><li>
+	S_FALSE: no method with the lMethodNum number is found in the extension.</li></ul><p>Description:</p><p>Assigns the number of parameters of the method with the lMethodNum sequence number to the plMethParams variable. Assigns 0 if the
+method with this number is not found or has no parameters. 1C:Enterprise
+provides memory for the variable. </p><p><b>GetParamDefValue </b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT GetParamDefValue(long lMethodNum, long lParamNum, VARIANT* pvParamDefVal) </pre><p>Parameters: </p><ul type=disc>
+ <li>
+	&lt;lMethodNum&gt; Type: long.
+     Method's sequence number. </li><li>
+	&lt;lParamNum&gt; Type: long.
+     Parameter's sequence number. </li><li>
+	&lt;pvParamDefVal&gt; Type:
+     VARIANT*. Pointer to the VARIANT structure that contains the default
+     parameter value upon return. </li></ul><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: successfully completed
+     (regardless of the default parameter value). </li><li>
+	S_FALSE: the method or method
+     parameter is not found.</li></ul><p>Description:</p><p>Assigns the default value of the lParamNum parameter of
+the method with the lMethodNum sequence number to the pvParamDefVal variable.
+Assigns the VT_EMPTY type to pvParamDefVal if the method with this number is
+not found or has no parameter with a number or when the parameter has no
+default value. 1C:Enterprise provides memory for the variable. </p><p><b>HasRetVal </b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT HasRetVal(long lMethodNum,BOOL* pboolHasRetVal) </pre><p>Parameters: </p><ul type=disc>
+ <li>
+	&lt;lMethodNum&gt; Type: long.
+     Method's sequence number. </li><li>
+	&lt;pboolHasRetVal&gt; Type: BOOL*. Pointer to the variable with a Boolean value that indicates whether
+     a return value is available upon return. </li></ul><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: successfully completed. </li><li>
+	S_FALSE: the method is not found.</li></ul><p>Description:</p><p>Assigns a Boolean value that indicates whether the method
+with the lMethodNum sequence number has a return value to the pboolHasRetVal variable. TRUE means that the method has a return value. Otherwise, the return
+value is False. 1C:Enterprise provides memory for the variable. </p><p><b>CallAsProc </b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT CallAsProc(long lMethodNum, SAFEARRAY** pVars) </pre><p>Parameters: </p><ul type=disc>
+ <li>
+	&lt;lMethodNum&gt; Type: long.
+     Method's sequence number. </li><li>
+	&lt;pVars&gt; Type: SAFEARRAY**.
+     Double pointer to the VARIANT structure array that contains method
+     parameter values. If the method has no parameters, it contains NULL. </li></ul><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: the method is called, no
+     errors occurred. </li><li>
+	E_FAIL: the method is called, a
+     runtime error occurred. Module execution is terminated. </li><li>
+	S_FALSE: the method corresponding
+     to the passed lMethodNum is not found.</li></ul><p>Description:</p><p>Executes the method with the lMethodNum sequence number.
+If the method returns E_FAIL, a runtime error occurs and 1C:Enterprise module
+execution is terminated. 1C:Enterprise provides memory for the parameter array. </p><p><b>CallAsFunc </b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT CallAsFunc(long lMethodNum, VARIANT* pRetValue, SAFEARRAY** pVars) </pre><p>Parameters: </p><ul type=disc>
+ <li>
+	&lt;lMethodNum&gt; Type: long.
+     Method's sequence number. </li><li>
+	&lt;pRetValue&gt; Type: VARIANT*.
+     Pointer to the VARIANT structure that contains a return value upon return. </li><li>
+	&lt;pVars&gt; Type: SAFEARRAY**.
+     Double pointer to the VARIANT structure array that contains method
+     parameter values. If the method has no parameters, it contains NULL. </li></ul><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: the method is called, no
+     errors occurred. </li><li>
+	E_FAIL: the method is called, a
+     runtime error occurred. Module execution is terminated. </li><li>
+	S_FALSE: the method corresponding
+     to the passed lMethodNum is not found.</li></ul><p>Description:</p><p>Executes the method with the lMethodNum sequence number.
+If the method returns E_FAIL, a runtime error occurs and 1C:Enterprise module
+execution is terminated. 1C:Enterprise provides memory for the array. </p><h3><a name="_com_locale"></a>Localization</h3><p><b>SetLocale </b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT SetLocale(BSTR bstrLocale) </pre><p>Parameters:</p><ul type=disc>
+ <li>
+	&lt;bstrLocale&gt; Type: BSTR.
+     Localization string in &lt;language&gt;-&lt;REGION&gt; format. For
+     example, &quot;en&quot; for English. </li></ul><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: successfully completed. </li><li>
+	E_FAIL: an error occurred.</li></ul><p>Description:</p><p>(Obsolete. To be used with the platform version 8.3.21 or
+earlier) 1C:Enterprise calls this method to localize the add-in according to
+the applied localization code. The add-in can set up its environment to
+correctly output information. </p><p><b>SetUserInterfaceLanguageCode </b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT SetUserInterfaceLanguageCode(BSTR wsLanguageCode) </pre><p>Parameters:</p><ul type=disc>
+ <li>
+	&lt;wsLanguageCode&gt; Type: BSTR.
+     A string with a two-letter language code. For example, &quot;en&quot; for
+     English. </li></ul><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: successfully completed. </li><li>
+	E_FAIL: an error occurred.</li></ul><p>Description:</p><p>1C:Enterprise passes the two-letter language code used by
+the user interface to the add-in.</p><h3><a name="_COM_VARIANT_Exchange"></a>Using the COM VARIANT type for data
+exchange</h3><h4><a name="addin_function"></a>Calling an add-in function</h4><p>Correspondence between 1C:Enterprise and COM types:</p><ul type=disc>
+ <li>
+	An undefined value corresponds to VT_EMPTY. </li><li>
+	An integer value corresponds to
+     VT_I4 and is assigned to lVal. </li><li>
+	A fractional value corresponds to
+     VT_R8 and is assigned to dblVal. </li></ul><p>Note that the internal presentation can be more precise
+than the double type (about 15 decimal places). That is why the value might be
+less precise after conversion.</p><ul type=disc>
+ <li>
+	A date value corresponds to VT_DATE and is assigned to date. </li><li>
+	A string value corresponds to VT_BSTR and is assigned to bstrVal. </li><li>
+	Objects correspond to VT_DISPATCH and are assigned to pdispVal. When you use 1C:Enterprise objects in the
+     add-in, call GetIDsOfNames to get object method DISPIDs and call Invoke. </li></ul><p>When converting a COM object to IDispatch, mutual call
+situations &quot;1C:Enterprise &gt; Add-in &gt; 1C:Enterprise&quot; and
+&quot;Add-in &gt; 1C:Enterprise &gt; Add-in&quot; are checked, and all required
+operations are performed correctly.</p><h4><a name="returning_values"></a>Returning values from add-ins </h4>
+
+<p>Correspondence between 1C:Enterprise and COM types:</p><ul type=disc>
+ <li>
+	VT_EMPTY corresponds to an
+     undefined value. When it is passed as a method parameter, the default
+     parameter value is passed instead. </li><li>
+	Values of the VT_I2, VT_I4, VT_BOOL, VT_ERROR, and VT_UI1 types correspond to an integer value and are
+     located in lVal. </li><li>
+	Values of the VT_R4, VT_R8, and VT_CY types correspond to a fractional value and are located in dblVal. </li><li>
+	A value of the VT_DATE type
+     corresponds to a date value and is located in date. </li><li>
+	A value of the VT_BSTR type
+     corresponds to a string value and is located in bstrVal. </li><li>
+	A value of the VT_ARRAY type
+     corresponds to an array and is located in parray (only for 1C:Enterprise
+     8). </li><li>
+	A value of the VT_DISPATCH type
+     corresponds to an object value and is located in pdispVal. </li></ul><p>The VT_DECIMAL, VT_VARIANT, and VT_UNKNOWN types are not
+supported.</p><p>When converting IDispatch to a COM object, mutual call
+situations &quot;1C:Enterprise &gt; Add-in &gt; 1C:Enterprise&quot; and
+&quot;Add-in &gt; 1C:Enterprise &gt; Add-in&quot; are checked, and all required
+operations are performed correctly.</p><h4><a name="_com_call_1C"></a>Calling 1C:Enterprise object methods
+from add-ins</h4><p>To call an object method, call the Invoke method of the IDispatch interface received earlier and pass all required parameters including
+the number (DISPID) of the called object method to the interface. You can get
+the number from the GetIDsOfNames method of the IDispatch interface. To do so,
+pass the object method name to the interface.</p><p>Correspondence between object method parameters and the
+VARIANT structure array is direct. It means that the structure with index 0
+corresponds to the first parameter, the structure with index 1 corresponds to
+the second parameter, and so on. When passing object method parameters, ensure
+that you pass values of all parameters including the default parameter values.
+To specify default values, assign the VT_EMPTY type (VT_ERROR for 1C:Enterprise
+8) to the corresponding VARIANT structure.</p><p>&nbsp;</p>
+
+<h3><a name="_COM_intf_1C"></a>1C:Enterprise COM-interfaces</h3><p>To get each of the interfaces mentioned below, call QueryInterface from the IDispatch pointer object passed upon initialization.
+You can find their IDs (IID) in the templates included in this distribution
+package.</p><h4><a name="saving_addin_object_parameters"></a>Saving
+add-in object parameters </h4><p>To save parameters, an add-in object can use
+1C:Enterprise methods of saving via the IPropertyProfile interface. This
+interface is inherited from the IPropertyBag interface that is standard for COM
+and has only one different method:</p><p><b>RegisterProfileAs </b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT RegisterProfileAs(BSTR bstrProfileName) </pre><p>Parameters: </p><ul type=disc>
+ <li>
+	&lt;bstrProfileName&gt; Type: BSTR. Add-in parameter list name. </li></ul><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: registration succeeded. </li><li>
+	E_FAIL: an error occurred during
+     registration. Error details are displayed in the message window. </li></ul><p>Description:</p><p>Registers a list of parameters of the bstrProfileName add-in. </p><p>You can arrange parameters as a tree when importing and
+saving them. To do so, specify the parameter name as
+&quot;Node1\Node2\...\NodeN\ParameterName:ParameterDefaultValue&quot; when
+passing in the Read and Write methods. In 1C:Enterprise 7.5, parameters are
+saved to the system registration database (Registry) in the HKEY_CURRENT_USER\Software\1C\1Cv7\7.5\Options key. In 1C:Enterprise 7.7, they are
+saved in the HKEY_CURRENT_USER\Software\1C\1Cv7\7.7\Options key. In
+1C:Enterprise 8, they are saved to a profile corresponding to &quot;computer – infobase – user&quot;.</p><h4><a name="_com_infomessage"></a>Informational messages on object
+operation</h4><p>To inform a user about its operations, an object can use
+the IErrorLog interface, which is standard for COM. The AddError method of the IErrorLog interface is described here for operation convenience only. Emerging
+messages are processed when the application is running (if the messages are
+queued asynchronously). They are also processed when returning from the Init
+initialization method and the extension method. All messages are queued and
+processed in the order they appear. The number of memorized messages is
+unlimited.</p><p><b>AddError </b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT AddError(BSTR pszPropName, LPEXCEPINFO pExcepInfo)</pre><p>Parameters: </p><ul type=disc>
+ <li>
+	&lt;pszPropName&gt; Type: BSTR. In
+     this implementation, the pszPropName parameter is ignored. </li><li>
+	&lt;pExcepInfo&gt; Type: LPEXCEPINFO. Pointer to the EXCEPINFO structure. </li></ul><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: the message is successfully
+     added. </li><li>
+	E_OUTOFMEMORY: out of memory. </li></ul><p>Other return codes might be displayed to indicate an
+error.</p><p>Description:</p><p>Adds an informational message when language extension
+methods are running. </p>
+
+<p>Possible message codes:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A>
+
+<PRE class="xml">#define ADDIN_E_NONE 1000<BR><BR>#define ADDIN_E_ORDINARY 1001<BR><BR>#define ADDIN_E_ATTENTION 1002<BR><BR>#define ADDIN_E_IMPORTANT 1003<BR><BR>#define ADDIN_E_VERY_IMPORTANT 1004<BR><BR>#define ADDIN_E_INFO 1005<BR><BR>#define ADDIN_E_FAIL 1006<BR><BR>#define ADDIN_E_MSGBOX_ATTENTION 1007<BR><BR>#define ADDIN_E_MSGBOX_INFO 1008<BR><BR>#define ADDIN_E_MSGBOX_FAIL 1009</PRE><p>The message code is assigned to the wCode field of the
+EXEPINFO structure. Error codes 1000 – 2000 are reserved.</p><p>When you process the message, a message box is displayed
+for the ADDIN_E_MSGBOX_ATTENTION, ADDIN_E_MSGBOX_INFO, and ADDIN_E_MSGBOX_FAIL
+codes, or a string with a message in the message box for the other codes. In
+general, the string has the following format:</p><p>&lt;Icon&gt; &lt;MessageSource&gt; :
+&lt;MessageDescription&gt; (MessageCode = &lt;MessageCode&gt;),</p><p>where &lt;Icon&gt;:</p><ul type=disc>
+ <li>
+	ADDIN_E_NONE: no icon </li>
+ <li>
+	ADDIN_E_ORDINARY: &quot;&gt;&quot;
+     icon </li>
+ <li>
+	ADDIN_E_ATTENTION: &quot;!&quot;
+     icon </li>
+ <li>
+	ADDIN_E_IMPORTANT: &quot;!!&quot;
+     icon </li>
+ <li>
+	ADDIN_E_VERY_IMPORTANT:
+     &quot;!!!&quot; icon </li>
+ <li>
+	ADDIN_E_INFO: &quot;i&quot; icon </li>
+ <li>
+	ADDIN_E_FAIL: &quot;err&quot; icon
+     for 1C:Enterprise 7.5 and 7.7 or &quot;!!!&quot; icon for 1C:Enterprise 8 </li>
+</ul>
+
+<p>The icon is missing if the used message code does not
+match the ones listed above.</p><p>&lt;ErrorSource&gt; : the bstrSource field in the
+EXCEPINFO structure</p><p>&lt;ErrorDescription&gt; : the bstrDescription field in
+the EXCEPINFO structure</p><p>&lt;ErrorCode&gt; : numeric message code in decimal form.
+The message code is not displayed if one of the above codes is used.</p><p>For the ADDIN_E_MSGBOX_ATTENTION, ADDIN_E_MSGBOX_INFO,
+and ADDIN_E_MSGBOX_FAIL codes, a message box is displayed with the OK button
+and the MB_ICONEXCLAMATION, MB_ICONINFORMATION, and MB_ICONERROR icons
+respectively.</p><p>The message has the following format:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>&lt;MessageSource&gt;:&lt;MessageDescription&gt;(Message code = &lt;MessageCode&gt;),</p><p>where &lt;MessageSource&gt;, &lt;MessageDescription&gt;,
+and &lt;MessageCode&gt; are described above.</p><h4><a name="dialog_messages"></a>Dialog box messages</h4><p>To display a dialog box to the user, the object can use
+the IMsgBox interface, which is standard for COM. The IMsgBox interface is
+inherited from IUnknown. Not available on the server and in an external
+connection.</p><p><b>Confirm</b></p><p>Syntax<b>:</b></p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT Confirm(const BSTR queryText, VARIANT* retVal); </pre><p>Parameters:</p><ul type=disc>
+ <li>
+	&lt;queryText&gt; Type: BSTR.
+     Question text. </li><li>
+	&lt;retVal&gt; Type: VARIANT.
+     Dialog box return value. VT_BOOL type. TRUE corresponds to the OK button.
+     FALSE corresponds to the Cancel button. </li></ul><p>Return value:</p><ul type=disc>
+ <li>
+	S_OK: the dialog box is displayed
+     successfully. </li><li>
+	E_FAIL: dialog box display is not
+     supported. </li></ul><p>Description:</p><p>Displays a dialog box with a text specified in the queryText parameter and OK and Cancel buttons.</p><p><b>Alert</b></p><p>Syntax<b>:</b></p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT Alert(BSTR text)</pre><p>Parameters:</p><ul type=disc>
+ <li>
+	&lt;queryText&gt; Type: BSTR.
+     Message text. </li></ul><p>Return value:</p><ul type=disc>
+ <li>
+	S_OK: the dialog box is displayed
+     successfully. </li><li>
+	E_FAIL: dialog box display is not
+     supported. </li></ul><p>Description:</p><p>Displays a simple dialog box with the OK button.</p><h4><a name="about_platform"></a>Platform information</h4><p>To receive information about the application that
+attached the object, you can use the IPlatformInfo interface, which is standard
+for COM. The IPlatformInfo interface is inherited from IUnknown</p><p><b>GetPlatformInfo</b></p><p>Syntax<b>:</b></p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT GetPlatformInfo(AppInfo** info)</pre><p>Parameters:</p><ul type=disc>
+ <li>
+	&lt;info&gt;Type AppInfo** is a
+     pointer to a structure with the following fields: &quot;AppVersion&quot;
+     of the BSTR type that contains the application version,
+     &quot;Application&quot; of the enumeration type that contains the type of
+     the application to which the add-in is attached, and &quot;UserAgentInformation&quot;
+     of the BSTR type that contains browser information (for web client only). </li></ul><p>Return value:</p><ul type=disc>
+ <li>
+	S_OK: successfully completed. </li><li>
+	E_FAIL: an error occurred.</li></ul><p>Description:</p><p>Requests information on the platform. When you attach the
+add-in in the web client of the old platform version, only the Application
+field of the AppInfo structure will be filled.</p><p><b>GetAttachedInfo</b></p><p>Syntax<b>:</b></p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT GetAttachedInfo(AttachedType** type)</pre><p>Parameters:</p><ul type=disc>
+ <li>
+	&lt;type&gt; AttachedType** type:
+     type of add-in attachment to the platform: </li><ul type=circle>
+  <li>
+	eAttachedIsolated = 0: isolated
+      attachment </li><li>
+	eAttachedNotIsolated = 1:
+      non-isolated attachment</li></ul></ul><p>Return value:</p><ul type=disc>
+ <li>
+	S_OK: successfully completed. </li><li>
+	E_FAIL: an error occurred.</li></ul><p>Description:</p><p>Requests information on the add-in attachment type. </p>
+
+<h4><a name="_com_externalevent"></a>External events</h4><p>When an asynchronous event occurs (for example, reading a
+barcode), the object can use the IAsyncEvent interface to create an external
+event in 1C:Enterprise. The IAsyncEvent interface is inherited from IUnknown.
+All events are queued and processed in the order they appear. The number of
+stored events is limited by the queue length. Upon initialization, the queue
+length is set to 1 and can be changed by calling SetEventBufferDepth, and the
+current queue size is received using the GetEventBufferDepth method. Each
+add-in object supports its own event queue. An external event is processed
+using the predefined ExternEventProcessing procedure and external event
+handlers in form modules.</p><p><b>SetEventBufferDepth </b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT SetEventBufferDepth(long lDepth) </pre><p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;lDepth&gt; Type: long. Event
+     queue length. </li></ul><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: the queue size is set
+     successfully. </li><li>
+	E_FAIL: an error occurred when
+     setting the queue size.</li></ul><p>Other return codes might be displayed to indicate an
+error.</p><p>Description:</p><p>Sets the event queue size for this object. If the current
+number of events in the queue is greater than the set length, the latest events
+are removed. </p><p><b>GetEventBufferDepth </b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT GetEventBufferDepth(long* plDepth) </pre><p>Parameters: </p><ul type=disc>
+ <li>
+	&lt;plDepth&gt; Type: long*.
+     Pointer to the variable that contains the event queue length upon return. </li></ul><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: the queue size is returned
+     successfully. </li><li>
+	E_FAIL: an error occurred when
+     receiving the queue size. </li></ul><p>Other return codes might be displayed to indicate an
+error.</p><p>Description:</p><p>Assigns the event queue size for this object to the plDepth variable. </p><p><b>ExternalEvent </b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT ExternalEvent(BSTR bstrWho, BSTR bstrWhat, BSTR bstrData)</pre><p>Parameters: </p><ul type=disc>
+ <li>
+	&lt;bstrWho&gt; Type: BSTR. String
+     with the message source name. </li><li>
+	&lt;bstrWhat&gt; Type: BSTR.
+     Message name string. </li><li>
+	&lt;bstrData&gt; Type: BSTR.
+     String with message parameters. </li></ul><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: the event is is queued. </li><li>
+	E_FAIL: the queue is full or an
+     unknown error occurred. </li><li>
+	E_OUTOFMEMORY: out of memory.</li></ul><p>Other return codes might be displayed to indicate an
+error.</p><p>Description:</p><p>Queues an event and records its source, name, and
+parameters. During event processing, this data is passed to the ExternEventProcessing procedure. When you call the ExternalEvent method, event
+processing looks as follows: the event is written to the event queue (if the
+queue is full, the event is lost). After that, if there are no system events,
+the first event is taken from the queue (if the queue is not empty) and
+external event processing is triggered. This process is repeated for all add-in
+objects. This way, processing of external events is synchronized with
+processing of system events. </p><p><b>CleanBuffer </b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT CleanBuffer() </p><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: the queue is successfully
+     cleared. </li><li>
+	E_FAIL: an error occurred when
+     clearing the queue. </li></ul><p>Other return codes might be displayed to indicate an
+error.</p><p>Description:</p><p>Clears the event queue by removing all events in the
+queue. </p><h4><a name="_com_statusline"></a>Status line operations </h4><p>The add-in object can use the IStatusLine interface to
+inform the user of its state. When you call the SetStatusLine method, the
+passed text is immediately displayed in the status line. When you call the ResetStatusLine method, the status line displays the standard text.</p><p><b>SetStatusLine </b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT SetStatusLine(BSTR bstrStatusText) </pre><p>Parameters: </p>
+
+<ul type=disc>
+ <li>
+	&lt;bstrStatusText&gt; Type: BSTR.
+     Status line text. </li></ul><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: the text is displayed in the
+     status line. </li><li>
+	E_FAIL: an unknown error occurred. </li></ul><p>Other return codes might be displayed to indicate an
+error.</p><p>Description:</p><p>Sets the status line text. </p><p><b>ResetStatusLine </b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT ResetStatusLine() </p><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: the status line is
+     successfully reinitialized. </li><li>
+	E_FAIL: an unknown error occurred.</li></ul><p>Other return codes might be displayed to indicate an
+error..</p><p>Description:</p><p>Initializes the status line. </p>
+
+<h3><a name="create_windows"></a>Creating windows in 1C:Enterprise 8
+environment </h3>
+
+<p>Add-ins can create their own windows to display various
+information using the <b>IExtWndsSupport</b> interface. The add-in can create
+two types of windows: modal dialog boxes and modeless dialog boxes.</p><p><i>Modal dialog boxes </i></p><p>Modal dialog boxes are created by the add-in. However,
+when creating them, specify the window returned by the GetAppMainFrame method
+as the parent window so that the operating system does not perceive the dialog
+box as a separate task with a button on the taskbar. 1C:Enterprise operation is
+suspended until the dialog box operation is completed.</p><p><i>Modeless dialog boxes  </i></p>
+
+<p>Modeless dialog boxes are also created by the add-in.
+However, when creating them, specify the window returned by the GetAppMDIFrame method as the parent window so that the operating system does not perceive the
+dialog box as a separate task with a button on the taskbar. The dialog box does
+not stop the operation of 1C:Enterprise and is similar to 1C:Enterprise forms.
+However, note that the created dialog box is not included in the list of open
+windows and is not displayed on the window panel. Therefore, using such dialog
+boxes is not recommended (you can use 1C:Enterprise forms instead).</p><p>In 1C:Enterprise 8, the ability to create windows is
+preserved with limitations for compatibility with the existing add-ins. To
+display non-standard information in 1C:Enterprise 8 windows, we recommend that
+you use forms with ActiveX controls or Active documents. Methods of the IExtWndsSupport interface are described below. Window operations are not
+supported in the web client.</p><p><b>GetAppMainFrame </b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT GetAppMainFrame(HWND* pHWnd) </pre><p>Parameters: </p><ul type=disc>
+ <li>
+	&lt;pHWnd&gt; Type: HWND*. Pointer to the window descriptor </li></ul><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: successfully completed. </li><li>
+	E_FAIL: an error occurred.</li></ul><p>Description::</p><p>Returns the main 1C:Enterprise window descriptor. </p><p><b>GetAppMDIFrame </b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>HRESULT GetAppMDIFrame(HWND* pHWnd) </pre><p>Parameters: </p><ul type=disc>
+ <li>
+	&lt;pHWnd&gt; Type: HWND*. Pointer to the window descriptor </li></ul><p>Return value: </p><ul type=disc>
+ <li>
+	S_OK: completed successfully. </li><li>
+	E_FAIL: an error occurred.</li></ul><p>Description:</p><p>Returns the active 1C:Enterprise window descriptor. </p>
+
+<h3><a name="ole_automation_access"></a>Accessing 1C:Enterprise via OLE
+Automation </h3>
+
+<p>Technology version: 2.0</p><p>The pointer to IDispatch passed in the Init method allows
+you to access 1C:Enterprise via OLE Automation. From the received pointer, you
+can get the read-only AppDispatch property. This property contains a pointer to IDispatch of 1C:Enterprise (do not confuse it with the one passed to Init).
+When the add-in is attached to the web client, the AppDispatch property will be
+unavailable. Consider it when developing add-ins.</p><p>The AppDispatch property becomes available only after the
+entire 1C:Enterprise system is fully initialized. For that reason, when the
+add-in is being loaded and the Init method is called, this property does not
+provide access to all 1C:Enterprise features.</p><p>Accessing 1C:Enterprise interface methods via OLE
+Automation</p><p>Visual Basic has a limited functionality for operation
+with various interfaces. In Visual Basic, you can operate with OLE Automation
+via the Object type, which is a pointer to IDispatch. In 1C:Enterprise, you can
+use OLE Automation by passing a pointer to IDispatch in the Init method and
+ensuring calls to methods of the above interfaces via OLE Automation.</p><h3><a name="ole_methods_properties"></a>Methods and properties available via
+OLE Automation</h3><p>Technology version: 1.0</p><p>RegisterProfileAs(&lt;ParametersListName&gt;)</p><p>Read(&lt;VariableName&gt;,&lt;RefToVARIANT&gt;)</p><p>Write(&lt;VariableName&gt;,&lt;RefToVARIANT&gt;)</p><p>SetEventBufferDepth(&lt;EventsQueueLength&gt;)</p><p>GetEventBufferDepth(&lt;RefToQueueLength&gt;)</p><p>ClearEventBuffer()</p><p>ExternalEvent(&lt;StringEventSource&gt;,&lt;StringEventName&gt;,&lt;StringEventParameters&gt;)</p><p>AddError(&lt;MessageCode&gt;,&lt;StringMessageSource&gt;,&lt;StringMessageDescription&gt;,&lt;ErrorCode&gt;)</p><p>SetStatusLine(&lt;StatusLine&gt;)</p><p>ResetStatusLine()</p><p>Technology version: 2.0 (additional to version 1.0)</p><p class=important><strong>
+Important.</strong> The methods and properties listed below are unavailable in the web client:</p><ul type=disc>
+ <li>
+	AppDispatch property </li><li>
+	GetAppMainFrame(&lt;Pointer to the
+     window descriptor&gt;) </li><li>
+	GetAppMDIFrame(&lt;Pointer to the
+     window descriptor&gt;) </li></ul><h3><a name="_com_warning"></a>Specifics of add-in development using
+COM</h3><p>Add-ins developed using COM technology may not be
+initially installed on the user's computer. The AttachAddIn(&lt;AddInLocation&gt;,
+&lt;MarkName&gt;, AddInType.COM) method gets the add-in file from the infobase if the latter is located there and calls the DllInstall add-in object
+registration function. If user registration is not successful, the DllRegisterServer function is called. If the user has restricted rights, add-in
+registration and attachment might be unsuccessful. The developer must ensure
+successful add-in registration for users under their current rights. If an
+add-in has its own installer, it must be registered for the computer.</p><h2><a name="_Подготовка_внешних_компонент_к_рабо"></a>Preparing
+add-ins for web client operations</h2><p>The web client interacts with add-ins over extensions.
+You can find projects for building extensions for Firefox, Google Chrome,
+Internet Explorer, and Safari in the provided examples. For security reasons,
+each extension can process only one add-in specified at the compilation stage.
+Every extension consists of an add-in and browser adapter. An add-in that is
+already created using COM can serve as the add-in component. </p><p>For Windows and Mac X, the developer must digitally sign
+the distribution package and all executable files included in it. According to
+Microsoft <a
+href="http://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-authenticode-code-signing-and-timestamping.aspx#How_to_dual_sign_files">recommendations</a>, all Windows distribution packages,
+except for msi packages, must have two signatures: sha1 and sha256.</p><p>Browser scripting language is single-threaded. That is
+why you must avoid callbacks from any threads other than the add-in main
+thread. Only the following methods will function in other threads: ExternalEvent, SetStatusLine, and ResetStatusLine. Keep it in mind when you
+develop an add-in.</p><p>On Windows, browser libraries use the Visual Studio 2017
+compiler with Windows XP support. </p><p>Starting from platform version 8.3.6, one adapter is used
+for Mozilla Firefox and Google Chrome.</p><h3><a name="_Внешние_компоненты_для_Internet_Exp"></a>Add-ins
+for Internet Explorer</h3><h4><a name="ie_adapter"></a>Creating an adapter for Internet Explorer</h4><p>A developer can create an extension based on the AddInIE project from the example directory. In the idl file, change the library name
+(for example, library MyComponentIELib) and coclass and library uuid. All file
+changes the developer must make are marked with the &quot;//change&quot;
+comment. You do not need to change interface uuid and names. It is recommended
+that you rename the project (for example, MyComponentIE). In the config.cpp file, replace the name of the included AddInIE_i.h file with the name generated
+by the idl file development environment. Also, change text variable values to
+library coclass names (for example, MyComponentIE.AddInServiceEx). Assign your
+library's LIBID value to the LIBID_AddInWebLib variable. In the nameFileComponent variable, specify the add-in name (for example, AddInNative.dll). In the nameFilePrj variable, specify the name of the
+extension project output file (for example, MyComponentIE.dll). An extension
+for Internet Explorer is a COM object, so the developer must pay attention to <a
+href="#_com_warning"><b>Specifics of add-in development using COM</b></a>.</p><h4><a name="ie_package"></a>Creating a distribution package for Internet Explorer</h4><p>Starting from 1C:Enterprise version 8.3.12, a
+distribution package for Internet Explorer in Microsoft Windows is created in
+the EXE format. In the example\AddInIESetup directory, you can find the NSIS project that creates a distribution package for an add-in example. To build a
+project, install <a href="http://nsis.sourceforge.net/Main_Page">NSIS</a>. In the AddInIESetup.nsh file, set values for each
+add-in. If you want to use add-ins with earlier 1C:Enterprise versions, create
+the distribution package as a CAB file. To see the script for building the CAB
+file, open example\PackageIE\buildcab.bat.</p><h3><a name="_Внешние_компоненты_для_Chrome"></a><a
+name="ext_comps_google_chrome"></a>Add-ins for Google Chrome and Mozilla
+Firefox</h3><h4><a name="chrome_adapter"></a>Creating an adapter for Google Chrome
+and Mozilla Firefox</h4><p>An add-in adapter for Google Chrome is a console
+application. Upon installation, the adapter registers one or multiple unique
+extension names in the browser. It is recommended that the extension name
+starts with &quot;com.&quot; and includes the add-in version number. For
+example, &quot;com.YourCompanyName.YouAddInName.1&quot;. If a new add-in
+version is released, update the version number in the name. Otherwise, the web
+client will continue using the old add-in version.</p><p>For example, suppose that the configuration uses an
+add-in named &quot;com.YourCompanyName.YouAddInName.3&quot;. The developer
+releases a new add-in version. To include it in the configuration, you must
+rebuild adapters for Google Chrome by renaming them to
+&quot;com.YourCompanyName.YouAddInName.4&quot;. Then rebuild distribution
+packages and include them in the <a
+href="#_Подготовка_внешних_компонент_для_за"><b>
+archive to import
+to the configuration.</b></a> Change the archive
+manifest file name to com.YourCompanyName.YouAddInName.4. After that, import
+the archive to the configuration. What happens when you start the web client
+with a new configuration on the device where the previous add-in version is
+installed? The web client receives the
+&quot;com.YourCompanyName.YouAddInName.4&quot; add-in name from the the
+configuration. This extension name is not registered in the browser, so the old
+add-in version will not be used. To use the add-in, the user must install it.
+However, the old version is not deleted. It remains available for use with
+earlier configurations.</p><p>The developer can create an extension based on the AddInChrome project from the example directory. In the config.cpp file, change
+values of the nameFilePrj and nameFileComponent variables. nameFilePrj must
+contain the adapter file name (for example, AddInChrWin32.exe). nameFileComponent must contain the add-in file name (for example, AddInNative.dll).</p><p>The jsoncpp library (<a
+href="http://jsoncpp.sourceforge.net/LICENSE"><b>license</b></a>) is used in adapters.</p><h4><a name="chrome_package"></a>Creating a distribution package for
+Google Chrome.</h4><p>A distribution package for Google Chrome on Windows is
+created in the EXE format.</p><p>A distribution package must include:</p><ul type=disc>
+ <li>
+	Add-in file </li><li>
+	Add-in adapter file </li><li>
+	Manifest file (in JSON format). </li></ul><p>The manifest file must look as follows:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>{<br>
+&quot;name&quot;: &quot;com.YourCompanyName.YouAddInName&quot;,<br>
+&quot;description&quot;: &quot;Description of add-in for Chrome and
+Firefox&quot;,<br>
+&quot;path&quot;: &quot;AddInChr.exe&quot;,<br>
+&quot;type&quot;: &quot;stdio&quot;,<br>
+&quot;allowed_origins&quot;: [<br>
+&quot;chrome-extension://pbhelknnhilelbnhfpcjlcabhmfangik/&quot;<br>
+]<br>
+}</pre><p>In the manifest file, change the following:</p><TABLE id="table1" class="withBorder" cellspacing="0" cellpadding="5" width="452"><TBODY><TR><TH width="109">
+<P style="TEXT-ALIGN: center" align="center"><b>
+	Name</b></P></TH><TH width="342">
+<P style="TEXT-ALIGN: center" align="center"><b>
+	Description</b></P></TH></TR><TR><TD width="109">name</TD><TD width="342">Extension
+  name</TD></TR><TR><TD width="109">description</TD><TD width="342">Displayed
+  add-in description</TD></TR><TR><TD width="109">path</TD><TD width="342">Path to the
+  add-in adapter file</TD></TR></TBODY></TABLE><p>Do not change the rest of the attributes.</p><p>When installing, the package copies files to the computer
+hard drive and registers the extension as a browser plugin in the system
+registry. In the registry, create the HKCU\Software\Google\Chrome\NativeMessagingHosts\com.YourCompanyName.YouAddInName branch (replace YourCompanyName and YouAddInName with your values). In the
+branch, create a parameter that shows the full path to the manifest file. The
+parameter must be of the default string type. The 'name' attribute of the
+manifest must match the registry branch name.</p><p>The developer must digitally sign the package
+(SHA1+SHA256).</p><p>In the example\AddInChromeSetup folder, you can find the NSIS project that creates a distribution package for an add-in example. To
+build a project, install <a
+name="NSIS_(Nullsoft_Scriptable_Install_System"></a><a
+href="http://nsis.sourceforge.net/Main_Page"><b>NSIS</b></a>. In the AddInChromeSetup.nsh file, set values for each add-in.</p><p>The distribution package for Google Chrome and Firefox on
+Linux is created as a self-extracting archive. It contains binary add-in
+modules, an adapter, and a manifest file. You can use the <a
+href="http://megastep.org/makeself/"><b>makeself</b></a> utility to build an archive. The archive script must copy the manifest to
+the ~/.config/google-chrome/NativeMessagingHosts/ directory. It also must copy
+executable files to another location.</p><p>The same package is used to install add-ins for Yandex.Browser, Microsoft Edge, and Chromium-Gost.</p><h3><a name="_Внешние_компоненты_для_Safari"></a><a name="ext_comps_safari"></a>
+Add-ins for Safari</h3><h4><a name="safari_adapter"></a>Creating an adapter for Safari</h4><p>The Safari add-in adapter is an NPAPI plugin. The NPAPI plugin registers one or more supported MIME media types in the browser. When
+creating a new add-in, the developer must select a MIME media type to be used
+as its UUID. We recommend that you begin the MIME media type name with
+application/ and include the add-in version number in it. For example,
+application/my-component-1. When selecting a MIME media type, make sure that
+there are no conflicts with the <a
+href="http://www.iana.org/assignments/media-types/index.html"><b>registered
+MIME media type</b></a>. If a new add-in version is
+released, update the version number in the MIME media type. Otherwise, the web
+client will continue using the old add-in version.</p><p>Let us assume that the configuration uses an add-in whose
+MIME media type is application/my-component-3. The developer releases a new
+add-in version. To include it in the configuration, rebuild the adapters for
+Safari by changing the MIME media type in them to application/my-component-4.
+Then rebuild distribution packages and include them in the <a
+href="#_Подготовка_внешних_компонент_для_за"><b>
+archive to import
+to the configuration.</b></a> Also, change the
+archive manifest file by changing the MIME media type in it to
+application/my-component-4. After that, import the archive to the
+configuration. What happens when you start the web client with a new
+configuration on the device where the previous add-in version is installed? The
+web client receives the following add-in MIME media type from the
+configuration: application/my-component-4. This MIME media type is not
+registered in the browser, so the old add-in version will not be used. To use
+the add-in, the user must install it. However, the old version is not deleted.
+It remains available for use with earlier configurations.</p><p style='background:white'>
+The developer can create an extension based on the AddInNPAPI project from
+the example directory. In the AddInNPAPI.cpp file, change the values of the
+nameFilePrj, nameFileComponent, and mimeType variables. nameFilePrj must
+contain the adapter file name (for example, AddInNPAPI.dyn), nameFileComponent
+must contain the add-in file name (for example, AddInNative.dyn). mimeType
+contains the add-in MIME media type.</p><p>The adapter for Safari on Mac OS X is already built and
+supplied in the lib folder: 1CEAdnWebNPAPISafOSX.bundle. An add-in for Mac OS
+also needs to be built as a bundle. We recommend that you build a 32/64-bit
+Universal module that contains at least the i386 and x86_64 architectures. The
+example/NativeAPI/MacBuild folder contains the XCode project that builds an
+add-in example for Mac OS.</p><h4><a name="safari_package"></a>Creating a distribution package for
+Safari</h4><p>To create a package for Mac OS X, use the PackageMaker
+application in PKG format. The package must be signed with the developer's
+digital signature (unless the add-in is to be installed on Mac OS X 10.4 Tiger
+and earlier).</p><p>To create a package, follow these steps:</p><p>1. Copy 1CEAdnWebNPAPISafOSX.bundle from the lib folder
+to another folder. Rename the file, but keep the .bundle extension.</p><p>2. Find the Info.plist file in the bundle content and
+open it for editing. In the file, change the MIME media type to the one used
+for your add-in. Also, change the extension description and other parameters.</p><p>3. In the Contents folder, create a PlugIns folder. Copy
+the bundle of the add-in built for Mac OS into this folder. Install the
+resulting adapter bundle with the add-in in the /Library/Internet Plug-Ins
+folder.</p><p>4. Build the distribution package. To do it, use the
+PackageMaker utility included in XCode. When installing, the package must only
+copy the bundle to the /Library/Internet Plug-Ins folder.</p><h2><a name="_Подготовка_внешних_компонент_для_за"></a>Preparing
+add-ins for import into a configuration</h2><p>You can pack add-ins into a ZIP archive. It is required
+for operations in the thin client, web client, and mobile platform.</p><p>1C:Enterprise for PC must include:</p><ul type=disc>
+ <li>
+	Add-ins for Windows (x86, x86_64),
+     GNU/Linux (x86, x86_64, ARM64, E2K), and MacOS (x86_64). </li>
+ <li>
+	Extensions created for Internet
+     Explorer (x86, x86_64), Mozilla Firefox, and Google Chrome (Microsoft
+     Windows x86 and x86_64, GNU/Linux x86, x86_64, ARM64, E2K, MacOS x86_64).</li></ul><p>1C:Enterprise for the mobile platform must include
+add-ins for Microsoft Windows Runtime (x86,&nbsp;x86_64, ARM),
+Android&nbsp;(x86,&nbsp;x86_64, ARM, ARM64, and the *.apk file – optional for
+Java code), and iOS (ARM and&nbsp;ARM64 merged into a universal file). iOS
+requires both dynamic and static libraries. The archive contains the
+MANIFEST.XML file and its description. For the mobile 1C:Enterprise platform,
+the archive can also include the following optional files:</p><ul type=disc>
+ <li>
+	IOS_MANIFEST_EXTENSIONS.XML for iOS describes permissions for using additional subsystems (framework) if they are required. </li><li>
+	ANDROID_MANIFEST_EXTENSIONS.XML for Android describes changes in AndroidManifest.xml if they are required. </li><li>
+	WINDOWS_RT_MANIFEST_EXTENSIONS.XML for Windows Runtime describes changes in AppxManifest.xml if they are required. </li></ul><p>In 1C:Enterprise for PC, add-in archives are imported to configuration templates of the &quot;Add-in&quot; or &quot;Binary data&quot; type.</p><p>In the mobile 1C:Enterprise platform, add-in archives are imported to configuration templates of the &quot;Add-in&quot; type.</p><h3><a name="File_show_manifest_xml"></a><a name=MANIFEST></a>MANIFEST.XML file description</h3><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>&lt;?xml
+version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;<br>
+&lt;bundle xmlns=&quot;<b>http://v8.1c.ru/8.2/addin/bundle</b>&quot;
+name=&quot;YouComponentName&quot;&gt;<br>
+&lt;component os=&quot;<b>Windows</b>&quot; path=&quot;<strong>AddIn_ChrWindows_x86.exe</strong>&quot;
+type=&quot;plugin&quot; object=&quot;com.YourCompanyName.YouAddInName.1&quot;
+arch=&quot;i386&quot; client=&quot;Firefox&quot; clientVersion=&quot;40.*&quot;
+/&gt;<br>
+&lt;component os=&quot;<b>Windows</b>&quot; path=&quot;<strong>AddIn_ChrWindows_x86_64.exe</strong>&quot;
+type=&quot;plugin&quot;
+object=&quot;com.YourCompanyName.YouExtensionName.1&quot;
+arch=&quot;x86_64&quot; client=&quot;Firefox&quot;
+clientVersion=&quot;40.*&quot; /&gt;<br>
+&lt;component os=&quot;<b>Linux</b>&quot; path=&quot;<b>AddIn_ChrLinux_x86.sh</b>&quot;
+type=&quot;plugin&quot; object=&quot;com.YourCompanyName.YouAddInName.1&quot; arch=&quot;i386&quot;
+client=&quot;Firefox&quot; clientVersion=&quot;40.*&quot; /&gt;<br>
+&lt;component os=&quot;<b>Linux</b>&quot; path=&quot;<b>AddIn_ChrLinux_x86_64.sh</b>&quot;
+type=&quot;plugin&quot; object=&quot;com.YourCompanyName.YouAddInName.1&quot;
+arch=&quot;x86_64&quot; client=&quot;Firefox&quot;
+clientVersion=&quot;40.*&quot; /&gt;<br>
+&lt;component os=&quot;<b>Linux</b>&quot; path=&quot;<b>AddIn_ChrLinux_ARM64.sh</b>&quot;
+type=&quot;plugin&quot; object=&quot;com.YourCompanyName.YouAddInName.1&quot;
+arch=&quot;ARM64&quot; client=&quot;Firefox&quot;
+clientVersion=&quot;40.*&quot; /&gt;<br>
+&lt;component os=&quot;<b>Linux</b>&quot; path=&quot;<b>AddIn_ChrLinux_E2KV4-8C.sh</b>&quot;
+type=&quot;plugin&quot; object=&quot;com.YourCompanyName.YouAddInName.1&quot;
+arch=&quot;E2K&quot; client=&quot;Firefox&quot; clientVersion=&quot;40.*&quot;
+/&gt;<br>
+&lt;component os=&quot;<b>Windows</b>&quot; path=&quot;<b>Addin_IEWindows_x86.exe</b>&quot;
+type=&quot;plugin&quot; object=&quot;MyComponentIE.AddInServiceEx&quot;
+arch=&quot;i386&quot; client=&quot;MSIE&quot; /&gt;<br>
+&lt;component os=&quot;<b>Windows</b>&quot; path=&quot;<b>AddIn_IEWindows_x86_64.exe</b>&quot;
+type=&quot;plugin&quot; object=&quot;MyComponentIE.AddInServiceEx&quot;
+arch=&quot;x86_64&quot; client=&quot;MSIE&quot; /&gt;<br>
+&lt;component os=&quot;<strong>Windows</strong>&quot;
+path=&quot;<strong>AddIn_ChrWindows_x86.exe</strong>&quot;
+type=&quot;plugin&quot; object=&quot;com.YourCompanyName.YouAddInName.1&quot;
+arch=&quot;i386&quot; client=&quot;Chrome&quot; /&gt;<br>
+&lt;component os=&quot;<strong>Windows</strong>&quot;
+path=&quot;<strong>AddIn_ChrWindows_x86_64.exe</strong>&quot;
+type=&quot;plugin&quot;
+object=&quot;com.YourCompanyName.YouExtensionName.1&quot;
+arch=&quot;x86_64&quot; client=&quot;Chrome&quot; /&gt;<br>
+&lt;component os=&quot;<strong>Linux</strong>&quot;
+path=&quot;<b>AddIn_ChrLinux_x86.sh</b>&quot; type=&quot;plugin&quot;
+object=&quot;com.YourCompanyName.YouAddInName.1&quot; arch=&quot;i386&quot;
+client=&quot;Chrome&quot; /&gt;<br>
+&lt;component os=&quot;<strong>Linux</strong>&quot;
+path=&quot;<b>AddIn_ChrLinux_x86_64.sh</b>&quot; type=&quot;plugin&quot;
+object=&quot;com.YourCompanyName.YouAddInName.1&quot; arch=&quot;x86_64&quot;
+client=&quot;Chrome&quot; /&gt;<br>
+&lt;component os=&quot;<strong>Linux</strong>&quot;
+path=&quot;<b>AddIn_ChrLinux_ARM64.sh</b>&quot; type=&quot;plugin&quot; object=&quot;com.YourCompanyName.YouAddInName.1&quot;
+arch=&quot;ARM64&quot; client=&quot;Chrome&quot; /&gt;<br>
+&lt;component os=&quot;<b>Linux</b>&quot; path=&quot;<b>AddIn_ChrLinux_E2KV4-8C.sh</b>&quot;
+type=&quot;plugin&quot; object=&quot;com.YourCompanyName.YouAddInName.1&quot;
+arch=&quot;E2K&quot; client=&quot;Chrome&quot; /&gt;<br>
+&lt;component os=&quot;<strong>MacOS</strong>&quot;
+path=&quot;<b>AddIn_ChrMacOS_x86_64.pkg</b>&quot; type=&quot;plugin&quot;
+object=&quot;com.YourCompanyName.YouExtensionName.1&quot;
+arch=&quot;x86_64&quot; client=&quot;Chrome&quot; /&gt;<br>
+&lt;component os=&quot;<strong>Windows</strong>&quot;
+path=&quot;<strong>AddIn_ChrWindows_x86.exe</strong>&quot;
+type=&quot;plugin&quot; object=&quot;com.YourCompanyName.YouAddInName.1&quot;
+arch=&quot;i386&quot; client=&quot;AnyChromiumBased&quot; /&gt;<br>
+&lt;component os=&quot;<strong>Windows</strong>&quot;
+path=&quot;<strong>AddIn_ChrWindows_x86_64.exe</strong>&quot;
+type=&quot;plugin&quot;
+object=&quot;com.YourCompanyName.YouExtensionName.1&quot;
+arch=&quot;x86_64&quot; client=&quot;AnyChromiumBased&quot; /&gt;<br>
+&lt;component os=&quot;<strong>Linux</strong>&quot;
+path=&quot;<b>AddIn_ChrLinux_x86.sh</b>&quot; type=&quot;plugin&quot;
+object=&quot;com.YourCompanyName.YouAddInName.1&quot; arch=&quot;i386&quot;
+client=&quot;AnyChromiumBased&quot; /&gt;<br>
+&lt;component os=&quot;<strong>Linux</strong>&quot;
+path=&quot;<b>AddIn_ChrLinux_x86_64.sh</b>&quot; type=&quot;plugin&quot;
+object=&quot;com.YourCompanyName.YouAddInName.1&quot; arch=&quot;x86_64&quot;
+client=&quot;AnyChromiumBased&quot; /&gt;<br>
+&lt;component os=&quot;<strong>Linux</strong>&quot;
+path=&quot;<b>AddIn_ChrLinux_ARM64.sh</b>&quot; type=&quot;plugin&quot;
+object=&quot;com.YourCompanyName.YouAddInName.1&quot; arch=&quot;ARM64&quot;
+client=&quot;AnyChromiumBased&quot; /&gt;<br>
+&lt;component os=&quot;<strong>MacOS</strong>&quot;
+path=&quot;<b>AddIn_ChrMacOS_x86_64.pkg</b>&quot; type=&quot;plugin&quot;
+object=&quot;com.YourCompanyName.YouExtensionName.1&quot;
+arch=&quot;x86_64&quot; client=&quot;AnyChromiumBased&quot; /&gt;<br>
+&lt;component os=&quot;<b>Linux</b>&quot; path=&quot;<b>AddIn_ChrLinux_E2KV4-8C.sh</b>&quot;
+type=&quot;plugin&quot; object=&quot;com.YourCompanyName.YouAddInName.1&quot;
+arch=&quot;E2K&quot; client=&quot;AnyChromiumBased&quot; /&gt;<br>
+&lt;component os=&quot;<b>Windows</b>&quot; path=&quot;<b>AddInNative_Win32.dll</b>&quot;
+type=&quot;native&quot; arch=&quot;i386&quot; /&gt;<br>
+&lt;component os=&quot;<b>Windows</b>&quot; path=&quot;<b>AddInNative_Win64.dll</b>&quot;
+type=&quot;native&quot; arch=&quot;x86_64&quot; /&gt;<br>
+&lt;component os=&quot;<b>Linux</b>&quot; path=&quot;<b>AddInNative_Lin32.so</b>&quot;
+type=&quot;native&quot; arch=&quot;i386&quot; /&gt;<br>
+&lt;component os=&quot;<b>Linux</b>&quot; path=&quot;<b>AddInNative_Lin64.so</b>&quot;
+type=&quot;native&quot; arch=&quot;x86_64&quot; /&gt;<br>
+&lt;component os=&quot;<b>Linux</b>&quot; path=&quot;<b>AddInNative_LinARM64.so</b>&quot;
+type=&quot;native&quot; arch=&quot;ARM64&quot; /&gt;<br>
+&lt;component os=&quot;<b>Linux</b>&quot; path=&quot;<b>AddInNative_LinE2KV4-8C.so</b>&quot;
+type=&quot;native&quot; arch=&quot;E2K&quot; /&gt;<br>
+&lt;component os=&quot;<b>MacOS</b>&quot; path=&quot;<b>AddInNative_MacOS64.dylib</b>&quot;
+type=&quot;native&quot; arch=&quot;x86_64&quot; /&gt;<br>
+&lt;component os=&quot;<b>iOS</b>&quot; path=&quot;<b>AddInNative_iOS.dylib</b>&quot;
+type=&quot;native&quot; arch=&quot;Universal&quot;
+buildType=&quot;developer&quot; /&gt;<br>
+&lt;component os=&quot;<b>iOS</b>&quot; path=&quot;<b>AddInNative_iOS.a</b>&quot;
+type=&quot;native&quot; arch=&quot;Universal&quot;
+buildType=&quot;release&quot; /&gt;<br>
+&lt;component os=&quot;<b>Android</b>&quot; path=&quot;<b>libAddInNative_Android_i386.so</b>&quot;
+type=&quot;native&quot; arch=&quot;i386&quot; codeType=&quot;c++&quot; /&gt;<br>
+&lt;component os=&quot;<b>Android</b>&quot; path=&quot;<b>AddInNative_Android.apk</b>&quot;
+type=&quot;native&quot; arch=&quot;i386&quot; codeType=&quot;java&quot; /&gt;<br>
+&lt;component os=&quot;<b>Android</b>&quot; path=&quot;<b>libAddInNative_Android_x64.so</b>&quot;
+type=&quot;native&quot; arch=&quot;x86_64&quot; codeType=&quot;c++&quot; /&gt;<br>
+&lt;component os=&quot;<b>Android</b>&quot; path=&quot;<b>AddInNative_Android.apk</b>&quot;
+type=&quot;native&quot; arch=&quot;x86_64&quot; codeType=&quot;java&quot; /&gt;<br>
+&lt;component os=&quot;<b>Android</b>&quot; path=&quot;<b>libAddInNative_Android_ARM.so</b>&quot;
+type=&quot;native&quot; arch=&quot;ARM&quot; codeType=&quot;c++&quot; /&gt;<br>
+&lt;component os=&quot;<b>Android</b>&quot; path=&quot;<b>AddInNative_Android.apk</b>&quot;
+type=&quot;native&quot; arch=&quot;ARM&quot; codeType=&quot;java&quot; /&gt;<br>
+&lt;component os=&quot;<b>Android</b>&quot; path=&quot;<b>libAddInNative_Android_ARM64.so</b>&quot;
+type=&quot;native&quot; arch=&quot;ARM64&quot; codeType=&quot;c++&quot; /&gt;<br>
+&lt;component os=&quot;<b>Android</b>&quot; path=&quot;<b>AddInNative_Android.apk</b>&quot;
+type=&quot;native&quot; arch=&quot;ARM64&quot; codeType=&quot;java&quot; /&gt;<br>
+&lt;component os=&quot;<b>WindowsRuntime</b>&quot; path=&quot;<b>AddInNative_WinRT_ARM.dll</b>&quot;
+type=&quot;native&quot; arch=&quot;ARM&quot; /&gt;<br>
+&lt;component os=&quot;<b>WindowsRuntime</b>&quot; path=&quot;<b>AddInNative_WinRT_x64.dll</b>&quot;
+type=&quot;native&quot; arch=&quot;x86_64&quot; /&gt;<br>
+&lt;component os=&quot;<b>WindowsRuntime</b>&quot; path=&quot;<b>AddInNative_WinRT_Win32.dll</b>&quot;
+type=&quot;native&quot; arch=&quot;i386&quot; /&gt;<br>
+&lt;/bundle&gt;,</pre><p>Where:</p><ul type=disc>
+ <li>
+	Name. Add-in name (required only
+     for the mobile platform). It must be unique and generated according to the
+     rules described in the &quot;Add-in naming rules&quot; section. </li>
+ <li>
+	Os. Operating system (Windows,
+     Linux, MacOS, WindowsRuntime, Android, or iOS). </li>
+ <li>
+	Path. File name in the archive. </li>
+ <li>
+	Type. Add-in type: plugin (browser
+     extension), native (Native add-in), or com (COM add-in). For the mobile
+     platform add-in, only the &quot;native&quot; value is available. </li>
+ <li>
+	Object. Name of the object to be
+     created by the browser. </li>
+ <li>
+	Arch. Processor architecture for
+     which the add-in will be used: </li>
+ <ul type=disc>
+  <li>
+	i386: 32-bit processor. </li>
+  <li>
+	x86_64: 64-bit processor. </li>
+  <li>
+	ARM: 32-bit processor with ARM
+      architecture. </li>
+  <li>
+	ARM64: 64-bit processor with ARM
+      architecture. </li>
+  <li>
+	E2K: 64-bit processor with
+      Elbrus-8C architecture.</li><li>
+	Universal: universal binary file
+      for iOS that contains an executable code for ARM and ARM64 </li>
+ </ul>
+ <li>
+	Client: used for the web client.
+     It specifies the browser the add-in is used for: MSIE (Internet Explorer),
+     Firefox (Mozilla Firefox), YandexBrowser (Yandex.Browser), Edge (Microsoft
+     Edge), Chrome (Google Chrome), ChromiumGost (Chromium-Gost), or
+     AnyChromiumBased (all browsers based on Chromium source texts). For
+     compatibility with earlier platform versions, it is recommended that you
+     add a separate record for Chrome. </li>
+ <li>
+	clientVersion: browser version. It
+     is required for Mozilla Firefox. </li>
+ <li>
+	buildType. Target application
+     type: developer (the application that imports the file is for developers),
+     release (for the published application version). The parameter is applied
+     to iOS. </li>
+ <li>
+	codeType. Library programming
+     language: c++ (the library is written in c++), java (the library is
+     written using Java Native Interface). The parameter is applied to Android.
+     </li>
+</ul>
+
+<p>Compliance of clientVersion versions specified in the
+manifest and Mozilla Firefox browser versions:</p><TABLE id="table2" class="withBorder" cellspacing="0" cellpadding="5" width="268"><TBODY><TR><TD valign="top" width="133">Manifest.xml</TD><TD valign="top" width="125">Firefox</TD></TR><TR><TD valign="top" width="133">40.*</TD><TD valign="top" width="125">40 or later</TD></TR></TBODY></TABLE><p>If you change add-ins (new release, bug fixing, and
+other), add the new version to the file name. For example: <b>AddInNative_1_1.so</b>.
+This rule is not applied to browser extensions. For them, change the
+&quot;object&quot; name.</p><p>Note that records for Google Chrome and Mozilla Firefox
+refer to the same distribution package.</p><h3><a name="File_show_android_xml"></a><a name=limited></a><a
+name="_Описание_файла_ANDROID_MANIFEST_EXT"></a><a
+name="IOS_MANIFEST_EXTENSIONS"></a>IOS_MANIFEST_EXTENSIONS.XML file
+description</h3><p>The IOS_MANIFEST_EXTENSIONS.XML file is used by the
+builder only for iOS. The file is optional. The file is used to make additional
+changes to the mobile application:</p><ul type=disc>
+ <li>
+	Enable subsystems (framework)
+     required for the add-in for the application being built. </li>
+ <li>
+	Include additional key/value pairs
+     in Info.plist. </li>
+</ul>
+
+<p>Consider the following example:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A>
+
+<PRE class="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;root&gt;
+
+	&lt;!-- Секция подключения framework-ов --&gt;
+	&lt;Additions&gt;
+        
+		&lt;framework name="System/Library/Frameworks/CoreMotion.framework"/&gt;
+		&lt;framework name="usr/lib/libgll.dylib"/&gt;
+		
+	&lt;/Additions&gt;
+
+	&lt;!-- Секция добавления значений в Info.plist --&gt;
+	&lt;Info_plist&gt;
+		&lt;key&gt;CFLanguage&lt;/key&gt;
+		&lt;dict&gt;
+			&lt;key&gt;CFListLanguage&lt;/key&gt;
+			&lt;array&gt;
+				&lt;string&gt;en&lt;/string&gt;
+				&lt;string&gt;ru&lt;/string&gt;
+				&lt;string&gt;fr&lt;/string&gt;
+			&lt;/array&gt;
+		&lt;/dict&gt;
+	&lt;/Info_plist&gt;
+&lt;/root&gt;</PRE><p>The standard XML header is followed by the &lt;root&gt;
+tag.</p><p>You can only add information to the &lt;Additions&gt; and
+&lt;Info_plist&gt; tags. Tags can be in any order.</p><p>The &lt;framework&gt; tags in the name=&quot;…&quot;
+attribute specify the full path and subsystem name to the builder.</p><p>All content of the &lt;Info_plist&gt; tag(s) is added to
+the &lt;dict&gt;&lt;/dict&gt; root tag of the Info.plist file by the builder
+without any analysis or changes.</p><h3><a name="ANDROID_MANIFEST_EXT_"></a>ANDROID_MANIFEST_EXTENSIONS.XML file
+description</h3><p>The ANDROID_MANIFEST_EXTENSIONS.XML file is used by the
+builder for Android only. The file is used to make changes to the
+AndroidManifest.xml manifest. For example, adding required add-in rights to
+certain add-ins or application functionality. The file is optional. If the file
+is missing, the builder interprets it as no additional changes in
+AndroidManifest.xml.</p><p>Consider the following example:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A>
+
+<PRE class="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;root xmlns:android="http://schemas.android.com/apk/res/android"&gt;
+
+&lt;!--uses-permission android:name="android.permission.WAKE_LOCK"/--&gt;
+
+&lt;uses-permission android:name="%application.package%.permission.MAPS_RECEIVE"/&gt;
+
+&lt;target xpath="/manifest"&gt;
+
+	&lt;uses-feature
+	
+		android:name="android.hardware.sensor.accelerometer
+	
+		android:required="true"/&gt;
+
+&lt;/target&gt;
+
+&lt;/root&gt;</PRE><p>The standard XML header is followed by the &lt;root&gt;
+tag with a fixed attribute. The &lt;root&gt; tag is similar to the
+&lt;manifest&gt; tag in AndroidManifest.xml files.</p><p>The lines inside the &lt;root&gt; tag are added to the
+&lt;manifest&gt; Android manifest tag without changes or analysis, except for
+the &lt;target&gt; tags.</p><p>All content of the &lt;target&gt; tags will be inserted
+into the part of AndroidManifest.xml specified in the xpath=&quot;…&quot;
+attribute.</p><p>You can localize the effect of lines on specific packages
+by specifying &quot;%application.package%. ...&quot;.</p><p>You can only add information to the &lt;manifest&gt; and
+&lt;/manifest/application&gt; tags of AndroidManifest.xml files.</p><p>The uses-permission, uses-feature, and other attributes
+are described in the Android developer documentation.</p><p>Adding attributes with the maximum SDK version to the
+uses-permission tags is not recommended. This can lead to conflicts when
+building applications with multiple add-ins.</p><h3><a name="WINDOWS_RT_MANIFEST"></a>WINDOWS_RT_MANIFEST_EXTENSIONS.XML file
+description</h3><p>The WINDOWS_RT_MANIFEST_EXTENSIONS.XML file is used by
+the builder for Windows Runtime. The file is used to make changes to the
+AppxManifest.xml manifest. For example, adding required add-in rights to
+certain add-ins or application functionality. The file is optional. If the file
+is missing, the builder interprets it as no additional changes in permission
+settings.</p><p>Consider the following example:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A>
+
+<PRE class="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;root&gt;
+
+&lt;Additions&gt;
+
+&nbsp; 	&lt;target xpath="/Package/Capabilities/Capability[@Name='musicLibrary']"/&gt;
+
+&nbsp; 	&lt;target xpath="/Package/Capabilities/DeviceCapability[@Name='proximity']"/&gt;
+
+&lt;/Additions&gt;
+
+&lt;/root&gt;</PRE><p>The standard XML header is followed by the &lt;root&gt;
+tag.</p><p>You can only add information to the &lt;Additions&gt;
+tag.</p><p>The &lt;target&gt; tags in the xpath=&quot;…&quot;
+attribute specify the path of the &quot;Name='XXXXX'&quot; parameters in the
+AppxManifest.xml file to the builder.</p><p>The &lt;Capability&gt; and &lt;DeviceCapability&gt; tags
+are described in the Windows developer documentation.</p><h3><a name="Rule_Name"></a><a name="_Правила_формирования_имени"></a>
+Add-in naming rules for the mobile 1C:Enterprise platform</h3><p>Since you can use multiple add-ins by different
+developers in the mobile application, add-in names might cause conflicts. To
+avoid them, follow the add-in naming rules mentioned below.</p><p>The add-in name must consist of Latin letters and/or
+digits and cannot include spaces. You can also use an underscore (_). The first
+character can be either a letter or an underscore (_). The add-in name is
+case-sensitive.</p><p>If the application is created in a company that has its
+own website and the website domain name is, for example, 1c.com, the add-in
+name must begin with the same words written in reverse order: com_1c. Dots are
+replaced with underscores (_). The underscore (_) is followed by the add-in
+name.</p><p>If the website name conflicts with the add-in name
+requirements, you can take the following steps: </p>
+
+<ul type=disc>
+ <li>
+	If the name contains a prohibited
+     character, for example, a dash, it can be replaced with an underscore. </li>
+ <li>
+	If the name matches a keyword, you
+     can add an underscore at the end. </li>
+ <li>
+	If the name starts with a digit,
+     you can add an underscore before it. </li>
+</ul>
+
+<h3><a name="Limited_BK"></a><a name="_Ограничения_в_работе"></a>Add-in
+restrictions</h3><p>The developer must consider that add-ins can be attached
+both in window applications (thin client, thick client) and console
+applications (for example, 1C:Enterprise server or web client). The main
+window, window system, message queue, and timers using the message queue may be
+missing in console applications, as well as the possibility to add a local hook
+(for example, to the keyboard) In this case, the add-in developer must create
+the necessary environment manually for the add-in to function correctly.</p><p>If you use the add-in technology in the mobile platform,
+the following methods cannot be called:</p><ul type=disc>
+ <li>
+	bool ADDIN_API Confirm(const
+     WCHAR_T* queryText, tVariant* retVal) </li>
+ <li>
+	bool ADDIN_API Alert(const
+     WCHAR_T* text) </li>
+</ul>
+
+<p>from the system stream, as displaying modal windows in
+this case might cause the application to hang.</p><p>Windows Runtime does not support import of dynamic
+libraries from a web publication.</p><p>This option is supported on iOS 9.3.5 or earlier.</p><h2><a name=examples></a>Description of examples</h2><p>This distribution package includes implementation
+examples for add-ins developed using Native API and COM, as well as extensions
+for Mozilla Firefox, Google Chrome, and Internet Explorer. The distribution package
+also contains a template to simplify add-in creation &quot;from scratch&quot;.</p><p>The provided add-in implementations are very similar to
+each other (same IDs, names, and so on), which makes them easier to analyze and
+understand.</p><p>The mobile platform example is different from the others
+due to its specific features. The example demonstrates implementation of a
+simplified pedometer. You can find it in the \example\NativeAPIMobile\
+directory.</p><p>To fully build examples for personal computers, the
+developer needs <a href="https://cmake.org/">
+CMake</a> 3.6 or later. To build installers for Windows, the developer needs <a
+href="https://sourceforge.net/projects/nsis/">
+NSIS</a>. To build installers for GNU/Linux, the developer needs <a
+href="https://makeself.io/">
+makeself</a>.</p><p>Add-ins implement the following properties and methods:</p><h3><a name=properties></a><a name="_Примеры_для_&quot;1С:Предприятие&quot;"></a>
+Examples of 1C:Enterprise add-in for personal computers</h3><h4>Properties</h4><p><b>IsEnabled</b></p><p>Use: Read and write.</p><p>Description: Type: Boolean. Contains an add-in state.</p><p><b>IsTimerPresent</b></p><p>Use: Read.</p><p>Description: Type: Boolean. Identifies whether an add-in has a timer.</p><h4><a name=methods></a>Methods</h4><p><b>Enable</b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>Enable()</pre><p>Description:</p><p>Enables the add-in object.</p><p><b>Disable</b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>Disable()</pre><p>Description:</p><p>Disables the add-in object.</p><p><b>ShowInStatusLinee</b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>ShowInStatusLine (&lt;Text&gt;)</pre><p>Parameters: </p><ul type=disc>
+ <li>
+	Text. Text displayed in the status line. </li></ul><p>Description:</p><p>Displays a received text in the status line for 5 seconds.</p><p><b>StartTimer</b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>StartTimer()</pre><p>Description:</p><p>Starts add-in timer. Every second, the add-in sends a message with the Component and Timer parameters and a system clock counter string to 1C:Enterprise.</p><p><b>StopTimer</b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>StopTimer()</pre><p>Description:</p><p>Stops add-in timer.</p><p>Besides, the add-in developed using Native API implements an additional method.</p><p><b>LoadPicture</b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>LoadPicture(&lt;FileName&gt;)</pre><p>Parameters: </p><ul type=disc>
+ <li>
+	FileName. Name of a file with an image. </li></ul><p>Description:</p><p>Imports an image from the specified file and passes it to 1C:Enterprise.</p><p><b>ShowMessage </b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>ShowMessage()</pre><p>Parameters: </p><p>None</p><p>Description:</p><p>Displays a message about the platform version.</p><h3><a name="mobile_example"></a>Add-in example for the mobile 1C:Enterprise platform</h3><h4>Properties</h4><p><b>IsEnabled</b></p><p>Use: Read.</p><p>Description: Type: Boolean. Contains an add-in state.</p><h4>Methods</h4><p><b>Enable</b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>Enable()</pre><p>Description:</p><p>Enables the add-in object. That triggers the pedometer countdown and tracking of the movement type with accelerometers.</p><p>The add-in generates an event with the &quot;StepCounter&quot;, &quot;OnChange&quot;, and &quot;_&quot; parameters for 1C:Enterprise when the number of steps changes.</p><p><b>Disable</b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>Disable()</pre><p>Description:</p><p>Disables the add-in object. That resets the number of steps to zero and stops tracking of movement type values with accelerometers.</p><p><b>GetStepCount</b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>GetStepCount()</pre><p>Type:</p><p>Integer value.</p><p>Description: </p><p>Returns the current calculated value of the operator steps starting from the latest Enable() method call.</p><p><b>GetMovementType</b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>GetMovementType()</pre><p>Type:</p><p>Integer value.</p><p>Description: </p><p>Returns the current movement type index.</p><p>0: undefined</p><p>1: still</p><p>2: walking</p><p>3: running</p><p>4: driving</p><p>5: riding a bicycle</p><p><b>GetDeviceOrientation</b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>GetDeviceOrientation(&lt;Plane&gt;)</pre><p>Parameters:</p><p>Plane. Cartesian coordinate system plane of requested data (0 is plane XOY, 1 is plane XOZ, 2 is plane YOZ).</p><p>Type:</p><p>Real value.</p><p>Description: </p><p>Returns current values of device orientation by Cartesian planes, in radians.</p><p><b>ShowDeviceOrientation</b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>ShowDeviceOrientation()</pre><p>Description:</p><p>Displays a message about current values of device orientation by Cartesian planes, in radians.</p><p><b>GetDescriptionLastError</b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class=programtext>GetDescriptionLastError()</pre><p>Description:</p><p>Returns the text of the last add-in error.</p><h3>Events</h3><p><b>ExternEventProcessing</b></p><p>Syntax:</p><A onclick="copySource(this); return false;" title="#" class="cbData" href="#">Copy to clipboard</A><pre class="Programtext">Procedure ExternEventProcessing (Source, Event, Data)
+
+	If Source = &quot;StepCounter&quot; And Event = &quot;OnChange&quot; Then
+
+		. . .
+
+	EndIf
+
+EndProcedure</pre><p class=note><strong>
+Note:</strong> &lt;Data&gt; for the specified example is &quot;_&quot;.</p><p>Description: </p><p>Appears when an add-in sends a message about a change in the number of steps.</p><p>&nbsp;</p>
+
+<h2>Development tools</h2><p>You can use the following development tools:</p><ul type=disc>
+ <li>
+	Microsoft Visual C++ </li><li>
+	Delphi </li><li>
+	C++ Builder </li><li>
+	Xcode </li><li>
+	Eclipse </li><li>
+	gcc </li><li>
+	CMake</li></ul></body></html>
