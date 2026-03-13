@@ -1,0 +1,227 @@
+/* ========== ОБЩИЕ НАСТРОЙКИ ========== */
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+.label {
+    -fx-background-color: transparent;
+}
+
+/* ========== СВЕТЛАЯ ТЕМА ========== */
+.root-light {
+    -fx-background-color: linear-gradient(to bottom right, #e0f2fe, #bae6fd);
+}
+
+.root-light .glass-pane {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 5);
+    -fx-border-color: rgba(255,255,255,0.6);
+    -fx-border-radius: 15;
+    -fx-border-width: 1;
+}
+
+/* Текст меток – непрозрачный */
+.root-light .label {
+    -fx-text-fill: #222222;
+    -fx-font-weight: bold;
+}
+
+/* Поля ввода: полупрозрачный белый фон (прозрачность 30%) */
+.root-light .text-field,
+.root-light .combo-box,
+.root-light .text-area {
+    -fx-background-color: rgba(255, 255, 255, 0.7);
+    -fx-text-fill: #222222;
+    -fx-prompt-text-fill: rgba(0, 0, 0, 0.5);
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+}
+.root-light .text-area .content {
+    -fx-background-color: rgba(255, 255, 255, 0.7);
+}
+/* Стили для поля ошибок в светлой теме (после общих .text-field, .combo-box, .text-area) */
+.root-light .error-text-area {
+    -fx-control-inner-background: #ffdddd;
+    -fx-text-fill: #990000;
+    -fx-background-color: #ffdddd;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+}
+.root-light .error-text-area .content {
+    -fx-background-color: #ffdddd;
+}
+
+/* ComboBox: все составные части */
+.root-light .combo-box .list-cell {
+    -fx-text-fill: #222222;
+    -fx-background-color: transparent;
+}
+.root-light .combo-box .arrow-button {
+    -fx-background-color: rgba(255, 255, 255, 0.7);
+}
+.root-light .combo-box .arrow {
+    -fx-background-color: #222222;
+}
+.root-light .combo-box .list-view {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-border-color: #cccccc;
+}
+.root-light .combo-box .list-view .list-cell {
+    -fx-text-fill: #222222;
+    -fx-background-color: transparent;
+}
+.root-light .combo-box .list-view .list-cell:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+}
+.root-light .combo-box .list-view .list-cell:selected {
+    -fx-background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Кнопки – полупрозрачные (прозрачность 25%) */
+.root-light .button {
+    -fx-background-color: rgba(70, 130, 200, 0.75);
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);
+}
+.root-light .button:hover {
+    -fx-background-color: rgba(100, 150, 220, 0.85);
+}
+
+/* ========== ТЁМНАЯ ТЕМА ========== */
+.root-dark {
+    -fx-background-color: linear-gradient(to bottom right, #1e293b, #0f172a);
+}
+
+.root-dark .glass-pane {
+    -fx-background-color: rgba(30, 30, 30, 0.4);
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.1), 10, 0, 0, 5);
+    -fx-border-color: rgba(255,255,255,0.2);
+    -fx-border-radius: 15;
+    -fx-border-width: 1;
+}
+
+/* Текст меток – белый непрозрачный */
+.root-dark .label {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
+/* Поля ввода: полупрозрачный чёрный фон (прозрачность 30%) */
+.root-dark .text-field,
+.root-dark .combo-box,
+.root-dark .text-area {
+    -fx-background-color: rgba(0, 0, 0, 0.7);
+    -fx-text-fill: #ffffff;
+    -fx-prompt-text-fill: rgba(255, 255, 255, 0.5);
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+}
+.root-dark .text-area .content {
+    -fx-background-color: rgba(0, 0, 0, 0.7);
+}
+/* Стили для поля ошибок в тёмной теме (после общих .text-field, .combo-box, .text-area) */
+.root-dark .error-text-area {
+    -fx-control-inner-background: #330000; /* тёмно-красный фон */
+    -fx-text-fill: #ffcccc;                /* светло-красный текст */
+    -fx-background-color: #330000;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+}
+.root-dark .error-text-area .content {
+    -fx-background-color: #330000;
+}
+
+/* ComboBox */
+.root-dark .combo-box .list-cell {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: transparent;
+}
+.root-dark .combo-box .arrow-button {
+    -fx-background-color: rgba(0, 0, 0, 0.7);
+}
+.root-dark .combo-box .arrow {
+    -fx-background-color: #ffffff;
+}
+.root-dark .combo-box .list-view {
+    -fx-background-color: rgba(30, 30, 30, 0.95);
+    -fx-border-color: #555555;
+}
+.root-dark .combo-box .list-view .list-cell {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: transparent;
+}
+.root-dark .combo-box .list-view .list-cell:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+}
+.root-dark .combo-box .list-view .list-cell:selected {
+    -fx-background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Кнопки */
+.root-dark .button {
+    -fx-background-color: rgba(30, 100, 200, 0.75);
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 5, 0, 0, 2);
+}
+.root-dark .button:hover {
+    -fx-background-color: rgba(60, 130, 230, 0.85);
+}
+
+/* ===== СТИЛИ ДЛЯ КНОПОК НАСТРОЕК ===== */
+.root-light .settings-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #222222;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+.root-light .settings-button:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+    -fx-background-radius: 5;
+}
+
+.root-dark .settings-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+.root-dark .settings-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-background-radius: 5;
+}
+
+/* ===== СТИЛИ ДЛЯ КОНТЕКСТНЫХ МЕНЮ ===== */
+.root-light .context-menu {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 5);
+    -fx-padding: 5;
+}
+.root-light .menu-item .label {
+    -fx-text-fill: #222222;
+}
+.root-light .menu-item:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+    -fx-background-radius: 5;
+}
+
+.root-dark .context-menu {
+    -fx-background-color: rgba(30, 30, 30, 0.9);
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.1), 10, 0, 0, 5);
+    -fx-padding: 5;
+}
+.root-dark .menu-item .label {
+    -fx-text-fill: #ffffff;
+}
+.root-dark .menu-item:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-background-radius: 5;
+}
