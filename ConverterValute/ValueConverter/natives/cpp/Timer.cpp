@@ -4,6 +4,8 @@
 #include <iomanip>
 #include <ctime>
 #include <sstream>
+#include "Api.h"
+#include "DataTxt.h"
 
 
 using namespace std;
@@ -21,12 +23,12 @@ string API_time(string dateTime)
 
     string nowT = ss.str();
 
-    if (nowT <= dateTime)
+    if (nowT >= dateTime)
     {
-        return "Data from fail";//Тут функция вани которая обращается к файлу с валютами
+        return GetText()+"Из файла";//Тут функция вани которая обращается к файлу с валютами
     }
     else
     {
-        return "Data from API";//тут функция Вани которая обращается к api 
+        return GetApi()+"Из API";//тут функция Вани которая обращается к api 
     }
 }
