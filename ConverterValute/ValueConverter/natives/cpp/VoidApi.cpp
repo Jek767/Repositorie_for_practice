@@ -23,7 +23,7 @@ std::string GetApi()
 	CURLcode res = curl_easy_perform(curl);
 	if (res != CURLE_OK) 
 	{
-		std::cerr << "ОШИБКА ЗАПРОСА: " << curl_easy_strerror(res) << std::endl;
+		throw std::runtime_error("Ошибка: " + std::string(curl_easy_strerror(res)));
 	}
 	curl_easy_cleanup(curl);
 	return response;

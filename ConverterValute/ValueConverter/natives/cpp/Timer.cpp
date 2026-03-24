@@ -9,9 +9,12 @@
 
 
 using namespace std;
+
 //Функция решает обращаться ли снова api
 string API_time(string dateTime)
 {
+    dateTime = dateTime.substr(0, 10);
+
     stringstream ss;// строка для потокового ввода
 
     time_t t = time(0); // время с начала 1970 года
@@ -19,16 +22,18 @@ string API_time(string dateTime)
 #pragma warning(suppress : 4996)// чтоб компилятор не ругался
     tm time = *localtime(&t);// получаем местное время 
 
-    ss << put_time(&time, "%Y-%m-%dT%H:%M:%S");// форматируем его и вводим в строку
+    ss << put_time(&time, "%Y-%m-%d");// форматируем его и вводим в строку
 
     string nowT = ss.str();
 
-    if (nowT >= dateTime)
+    if (nowT > dateTime)
     {
-        return GetText()+"Из файла";//Тут функция вани которая обращается к файлу с валютами
+
+        return GetApi();//тут функция Вани которая обращается к api 
+        
     }
     else
     {
-        return GetApi()+"Из API";//тут функция Вани которая обращается к api 
+        return GetText();//Тут функция вани которая обращается к файлу с валютами
     }
 }
