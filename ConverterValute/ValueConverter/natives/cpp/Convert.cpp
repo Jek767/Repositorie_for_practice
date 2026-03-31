@@ -5,6 +5,7 @@
 #include "Timer.h"
 #include <nlohmann/json.hpp> 
 #include "Convert.h"
+#include "ValuePerNominal.h"
 
 using namespace std;
 using json = nlohmann::json;
@@ -28,19 +29,22 @@ double convert(const int Val,const string First,const string Second)
 
 			EnteringString(DataBase);
 
-			json Curency = json::parse(DataBase);
 
-			double usd = Curency["Valute"]["USD"]["Value"];// Тут функция будет Ильи которая достает конкретные данные
+			double FirstCurency = ValuePerNominal(DataBase, First);// Получаем курс второй валюты
 
-			return usd * Val;
+			double SecondCurency = ValuePerNominal(DataBase, Second);// Получаем курс второй валюты
+
+			return FirstCurency * Val/SecondCurency;
 		}
 		catch (const std::runtime_error& ex)
 		{
 			std::cerr << "Из-за проблем с сетью не удалось выполнить запрос к API, используются данне из сохраненного ранее файла. Дата сохранения: " << data["Date"] << endl;
 
-			double usd = data["Valute"]["USD"]["Value"];// Тут функция будет Ильи которая достает конкретные данные
+			double FirstCurency = ValuePerNominal(parser, First);// Получаем курс второй валюты
 
-			return usd * Val;
+			double SecondCurency = ValuePerNominal(parser, Second);// Получаем курс второй валюты
+
+			return FirstCurency * Val / SecondCurency;
 		}
 
 	}
@@ -54,11 +58,11 @@ double convert(const int Val,const string First,const string Second)
 
 			EnteringString(dataFileNot);
 
-			json dataFileNot2 = json::parse(dataFileNot);
+			double FirstCurency = ValuePerNominal(dataFileNot, First);// Получаем курс второй валюты
 
-			double usd = dataFileNot2["Valute"]["USD"]["Value"];// Тут функция будет Ильи которая достает конкретные данные
+			double SecondCurency = ValuePerNominal(dataFileNot, Second);// Получаем курс второй валюты
 
-			return usd * 100;
+			return FirstCurency * Val / SecondCurency;
 		}
 		catch (const std::runtime_error& ex)
 		{

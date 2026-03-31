@@ -3,7 +3,7 @@
 
 int main()
 {
-	std::cout << convert(15, "44", "gff");
+	std::cout << convert(15, "RUB", "USD");
 
 	return 0;
 }
