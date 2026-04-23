@@ -10,7 +10,13 @@ static size_t WriteCallBack(void* contents, size_t size, size_t nmemb, std::stri
 	output->append((char*)contents, totalSize);
 	return totalSize;
 }
-std::string GetApi()
+
+std::string GetLocaleMessage(std::string locale) {
+	if (locale == "ru") return "Ошибка:";
+	return "Error:";
+}
+
+std::string GetApi(const std::string locale)
 {
 	std::string url = "https://www.cbr-xml-daily.ru/daily_json.js";
 	std::string response = "";
@@ -23,7 +29,7 @@ std::string GetApi()
 	CURLcode res = curl_easy_perform(curl);
 	if (res != CURLE_OK) 
 	{
-		throw std::runtime_error("Ошибка: " + std::string(curl_easy_strerror(res)));
+		throw std::runtime_error(GetLocaleMessage(locale) + std::string(curl_easy_strerror(res)));
 	}
 	curl_easy_cleanup(curl);
 	return response;

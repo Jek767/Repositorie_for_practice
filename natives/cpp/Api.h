@@ -1,4 +1,4 @@
 #pragma once
 #include <string>
 
-std::string GetApi();
+std::string GetApi(const std::string locale);

@@ -2,23 +2,37 @@ cmake_minimum_required(VERSION 3.10)
 project(CurrencyConverter)
 
 # ========== C++ часть ==========
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
-
 
  # ======= Сюда добавлять и изменять файлы из проекта ======
 add_executable(converter
-    natives/cpp/converter.cpp
-    natives/cpp/messages.cpp
+    natives/cpp/Main.cpp
+    natives/cpp/Convert.cpp
+    natives/cpp/Timer.cpp
+    natives/cpp/ValuePerNominal.cpp
+    natives/cpp/VoidApi.cpp
+    natives/cpp/VoidDataTxt.cpp
 )
 
 # ==========================================================
 
+set(CURL_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/libs/curl-8.19.0_6-win64-mingw)
+set(CURL_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/libs/curl-8.19.0_6-win64-mingw/include")
+set(CURL_LIBRARY "${CMAKE_CURRENT_SOURCE_DIR}/libs/curl-8.19.0_6-win64-mingw/lib/libcurl.dll.a")
+target_include_directories(converter PRIVATE ${CURL_INCLUDE_DIR})
+target_link_libraries(converter ${CURL_LIBRARY})
+
+target_include_directories(converter PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/libs)
+
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
+    target_link_libraries(converter stdc++fs)
+endif()
 
 if(MSVC)
     target_compile_options(converter PRIVATE /utf-8)
 endif()
+target_include_directories(converter PRIVATE natives/cpp)
 
 # Определяем платформенную папку (для Windows – win/x64)
 if(WIN32)
@@ -33,6 +47,18 @@ add_custom_command(TARGET converter POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E make_directory ${CMAKE_CURRENT_SOURCE_DIR}/natives/${PLATFORM_FOLDER}
     COMMAND ${CMAKE_COMMAND} -E copy
         $<TARGET_FILE:converter>
+        ${CMAKE_CURRENT_SOURCE_DIR}/natives/${PLATFORM_FOLDER}/
+    COMMAND ${CMAKE_COMMAND} -E copy
+        ${CMAKE_CURRENT_SOURCE_DIR}/natives/cpp/myExchangeRate.txt
+        ${CMAKE_CURRENT_SOURCE_DIR}/natives/${PLATFORM_FOLDER}/
+    COMMAND ${CMAKE_COMMAND} -E copy
+        ${CMAKE_CURRENT_SOURCE_DIR}/natives/cpp/myExchangeRate.txt
+        $<TARGET_FILE_DIR:converter>
+    COMMAND ${CMAKE_COMMAND} -E copy
+        ${CMAKE_CURRENT_SOURCE_DIR}/libs/curl-8.19.0_6-win64-mingw/bin/libcurl-x64.dll
+        $<TARGET_FILE_DIR:converter>
+    COMMAND ${CMAKE_COMMAND} -E copy
+        ${CMAKE_CURRENT_SOURCE_DIR}/libs/curl-8.19.0_6-win64-mingw/bin/libcurl-x64.dll
         ${CMAKE_CURRENT_SOURCE_DIR}/natives/${PLATFORM_FOLDER}/
     COMMENT "Copying C++ executable to natives/${PLATFORM_FOLDER}/"
 )

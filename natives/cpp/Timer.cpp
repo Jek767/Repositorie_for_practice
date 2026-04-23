@@ -29,7 +29,7 @@ string API_time(string dateTime)
     if (nowT > dateTime)
     {
 
-        return GetApi();//тут функция Вани которая обращается к api 
+        return GetApi("en");//тут функция Вани которая обращается к api 
         
     }
     else

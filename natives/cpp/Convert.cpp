@@ -10,10 +10,22 @@
 using namespace std;
 using json = nlohmann::json;
 
+std::string GetLocaleMessage(std::string locale, std::string key) {
+	if (locale == "ru") {
+		if (key == "NE") return "Из-за проблем с сетью не удалось выполнить запрос к API, используются данне из сохраненного ранее файла. Дата сохранения: ";
+		else if (key == "UNE") return "Из-за проблем с сетью не удалось выполнить запрос к API.";
+	}
+	else {
+		if (key == "NE") return "Due to network issues, the API request could not be completed, and data from a previously saved file is being used. Date of saving: ";
+		else if (key == "UNE") return "Due to network issues, the API request could not be completed.";
+	}
+}
+
 //Val - количество валюты
 //First - трехбуквенное обозначение первой валюты
 //Second - трехбуквенное обозначение второй валюты
-double convert(const int Val,const string First,const string Second)
+//locale - локаль ("ru" / "en")
+double convert(const double Val,const string First,const string Second, const string locale)
 {
 	//Если файл с курсами есть
 	if (std::filesystem::exists("myExchangeRate.txt"))
@@ -38,7 +50,7 @@ double convert(const int Val,const string First,const string Second)
 		}
 		catch (const std::runtime_error& ex)
 		{
-			std::cerr << "Из-за проблем с сетью не удалось выполнить запрос к API, используются данне из сохраненного ранее файла. Дата сохранения: " << data["Date"] << endl;
+			std::cerr << GetLocaleMessage(locale, "NE") << data["Date"] << endl;
 
 			double FirstCurency = ValuePerNominal(parser, First);// Получаем курс второй валюты
 
@@ -54,7 +66,7 @@ double convert(const int Val,const string First,const string Second)
 		//Если интенета нет - значение не считается(программа не ломается просто сообщает об этом)
 		try
 		{
-			string dataFileNot = GetApi();
+			string dataFileNot = GetApi(locale);
 
 			EnteringString(dataFileNot);
 
@@ -66,7 +78,7 @@ double convert(const int Val,const string First,const string Second)
 		}
 		catch (const std::runtime_error& ex)
 		{
-			std::cerr << "Из-за проблем с сетью не удалось выполнить запрос к API" << endl;
+			std::cerr << GetLocaleMessage(locale, "UNE") << endl;
 		}
 	}
 }
