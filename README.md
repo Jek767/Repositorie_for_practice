@@ -35,7 +35,7 @@ CMake - 3.10
      4.2. `--cmake --build build --config Release`
      
      4.3. `
-           & ".\libs\openjdk-25.0.2\bin\java" `
+          >>     & ".\libs\openjdk-25.0.2\bin\java" `
      
           >>     --module-path ".\libs\javafx-sdk-25.0.2\lib" `
      
