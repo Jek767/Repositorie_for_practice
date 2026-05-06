@@ -34,15 +34,16 @@ CMake - 3.10
      
      4.2. `--cmake --build build --config Release`
      
-     4.3. `& ".\libs\openjdk-25.0.2\bin\java" `
+     4.3. `
+           & ".\libs\openjdk-25.0.2\bin\java" `
      
-          `>>     --module-path ".\libs\javafx-sdk-25.0.2\lib" `
+          >>     --module-path ".\libs\javafx-sdk-25.0.2\lib" `
      
-          `>>     --add-modules javafx.controls,javafx.fxml `
+          >>     --add-modules javafx.controls,javafx.fxml `
      
-          `>>     --enable-native-access=javafx.graphics `
+          >>     --enable-native-access=javafx.graphics `
      
-          `>>     -jar converter.jar`
+          >>     -jar converter.jar
 
 При повторном запуске проекта, при наличии .jar файла в директории проекта, необходимо прописывать в командной строке только третью команду.
 # Тестирование и отладка
