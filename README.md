@@ -28,15 +28,16 @@ CMake - 3.10
   3. Перейти в директорию проекта (к файу CMake)
   
   4. Прописать команды
-     3.1.` >>    --cmake -B build`
      
-     3.2.` >>    --cmake --build build --config Release`
+     4.1. `--cmake -B build`
      
-     3.3.` & ".\libs\openjdk-25.0.2\bin\java" `
-        >>     --module-path ".\libs\javafx-sdk-25.0.2\lib" `
-        >>     --add-modules javafx.controls,javafx.fxml `
-        >>     --enable-native-access=javafx.graphics `
-        >>     -jar converter.jar
+     4.2. `--cmake --build build --config Release`
+     
+     4.3. `& ".\libs\openjdk-25.0.2\bin\java" `
+           >>     --module-path ".\libs\javafx-sdk-25.0.2\lib" `
+           >>     --add-modules javafx.controls,javafx.fxml `
+           >>     --enable-native-access=javafx.graphics `
+           >>     -jar converter.jar
 
 При повторном запуске проекта, при наличии .jar файла в директории проекта, необходимо прописывать в командной строке только третью команду.
 # Тестирование и отладка
