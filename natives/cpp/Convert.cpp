@@ -37,7 +37,7 @@ double convert(const double Val,const string First,const string Second, const st
 		//Если нет интернета значение считается по курсу сохренному в файле
 		try
 		{
-			string DataBase = API_time(data["Date"]);
+			string DataBase = API_time(data["Date"], locale);
 
 			EnteringString(DataBase);
 

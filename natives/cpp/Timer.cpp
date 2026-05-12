@@ -11,7 +11,7 @@
 using namespace std;
 
 //Функция решает обращаться ли снова api
-string API_time(string dateTime)
+string API_time(string dateTime, std::string locale)
 {
     dateTime = dateTime.substr(0, 10);
 
@@ -29,7 +29,7 @@ string API_time(string dateTime)
     if (nowT > dateTime)
     {
 
-        return GetApi("en");//тут функция Вани которая обращается к api 
+        return GetApi(locale);//тут функция Вани которая обращается к api 
         
     }
     else
