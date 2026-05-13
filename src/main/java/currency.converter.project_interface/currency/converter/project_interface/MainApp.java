@@ -95,7 +95,7 @@ public class MainApp extends Application implements LocalizationManager.LocaleCh
         // Обновляем верхнюю панель
         themeButton.setText(newBundle.getString("theme.button"));
         langButton.setText(newBundle.getString("language.button"));
-        titleLabel.setText("Converter Project"); // статично
+        titleLabel.setText("Bakhlany Convertor"); // статично
         // Обновляем центральную часть
         mainContentFactory.updateTexts();
         mainContentFactory.updateCurrencyList();
