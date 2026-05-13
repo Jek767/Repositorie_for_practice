@@ -133,6 +133,51 @@ add_custom_command(
     COMMAND ${Java_JAR_EXECUTABLE} cfe ${JAR_FILE} currency.converter.project_interface.MainApp -C ${CLASSES_DIR}/currency.converter.project_interface .
     COMMENT "Creating converter.jar"
 )
+option(BUILD_TESTS "Build unit tests" ON)
+if(BUILD_TESTS)
+    # Исполняемый файл для тестов
+    add_executable(Tests
+        natives/UnitTests/main.cpp
+        natives/UnitTests/APITest/APITest.cpp
+        natives/UnitTests/ConvertTest/ConvertTest.cpp
+        natives/UnitTests/EnteringTest/EnteringTest.cpp
+        natives/UnitTests/GetTest/GetTest.cpp
+        natives/UnitTests/TimerTest/TimerTest.cpp
+        natives/UnitTests/ValuePerNominalTest/ValuePerNominalTest.cpp
+        natives/cpp/Convert.cpp
+        natives/cpp/Timer.cpp
+        natives/cpp/ValuePerNominal.cpp
+        natives/cpp/VoidApi.cpp
+        natives/cpp/VoidDataTxt.cpp
+    )
+
+    target_include_directories(Tests PRIVATE
+        ${CURL_INCLUDE_DIR}
+        ${CMAKE_CURRENT_SOURCE_DIR}/libs
+        ${CMAKE_CURRENT_SOURCE_DIR}/natives/cpp
+    )
+    target_compile_options(Tests PRIVATE
+        ${CMAKE_CXX_FLAGS}
+    )
+    if(MSVC)
+        target_compile_options(Tests PRIVATE /utf-8)
+    endif()
+
+    target_link_libraries(Tests
+        ${CURL_LIBRARY}
+    )
+
+    if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
+        target_link_libraries(Tests stdc++fs)
+    endif()
+
+    enable_testing()
+    add_test(NAME UnitTests COMMAND Tests)
+
+    message(STATUS "Unit tests will be built")
+endif()
+
+
 # Общая цель сборки
 add_custom_target(build_all ALL
     DEPENDS converter ${JAR_FILE}
