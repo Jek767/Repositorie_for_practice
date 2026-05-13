@@ -22,7 +22,7 @@ public class TopBarFactory {
         this.onLanguageChange = onLanguageChange;
         this.themeButton = createThemeButton();
         this.langButton = createLanguageButton();
-        this.titleLabel = new Label("Converter Project");
+        this.titleLabel = new Label("Bakhlany Convertor");
         titleLabel.setStyle("-fx-font-size: 24px; -fx-font-weight: bold;");
     }
 
